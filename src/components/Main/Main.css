@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif !important;
+
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto !important;
+}
+
+.card .left img {
+    width: 720px;
+    height: 420px;
+}
+
+.card {
+    margin-top: 2.4rem !important;
+    margin-bottom: 2.4rem !important;
+    display: flex;
+}
+
+.card .right {
+    background-color: #BBF2D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+}
+
+.right h1 {
+    font-size: 24px;
+    margin-bottom: 24px !important;
+}
+
+.right p {
+    font-size: 19px;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.text {
+    text-align: center !important;
+    justify-content: center !important;
+    width: 68%;
+
+}
+
+.text button {
+    margin-top: 32px !important;
+    padding: 7px 16px !important;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text button:hover {
+    background: #ABDFC1;
+}
+
+.reverse-cart {
+    flex-direction: row-reverse;
+}
+
+.reverse-cart .right {
+
+    background-color: #ECAED8 !important;
+}
+
+.card .left .two-img {
+    width: 720px;
+    height: 625px;
+}
+
+.right .two-text {
+    font-size: 50px;
+    color: #552200;
+}
+
+.right .two-p {
+    color: #552200;
+    font-size: 24px;
+}
+
+.right .text-two {
+    width: 69%;
+}
+
+.right .order {
+    margin-top: 32px !important;
+    padding: 7px 16px !important;
+    background: none;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    cursor: pointer;
+}
+
+.right .order:hover {
+    background-color: #D7A2C7;
+}
+
+.right .total {
+    font-size: 50px;
+    color: #FDD8F7;
+}
+
+.card .brown {
+    background-color: #552200;
+}
+
+.brown .pinkp {
+    color: #FDD8F7;
+    font-size: 24px;
+}
+
+.brown .button-brown {
+    color: white;
+    border-color: white;
+}
+
+.button-brown:hover {
+    background: #441B00 !important;
+}
