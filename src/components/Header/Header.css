@@ -75,6 +75,9 @@
     margin-right: 40px !important;
     cursor: pointer;
 }
+.right .loc:hover{
+    color: #00754A;
+}
 
 
 .right .join{
@@ -86,6 +89,9 @@
     padding: 7px 16px !important;
     font-weight: 600;
 cursor: pointer;
+}
+.right .join:hover{
+    background-color: #4C4C4C;
 }
 
 .right .sign {
@@ -101,8 +107,12 @@ cursor: pointer;
 cursor: pointer;
 
 }
-.right button span img{
-    width: 20px;
-    height: 20px;
+.right .sign:hover{
+    background-color: #E5E5E5;
+
+}
+.right button svg{
+    width: 25px !important;
+    height: 23px !important;
     margin-right: 10px !important;
 }

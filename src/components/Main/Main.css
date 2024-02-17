@@ -11,7 +11,7 @@
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1440px !important;
     margin: 0 auto !important;
 }
 
@@ -135,4 +135,112 @@
 
 .button-brown:hover {
     background: #441B00 !important;
+}
+
+.right .savory {
+    color: #1E3932;
+}
+
+.right .white {
+    color: white;
+    border-color: white;
+}
+
+.card .bck-blue {
+
+    background-color: #A5C4DC !important;
+}
+
+.card .hover-blue:hover {
+    background-color: #97B6CB;
+}
+
+.card .blue-dark {
+    background-color: #337481;
+}
+
+.reverse-cart .green {
+    background-color: #006241 !important;
+    width: 100%;
+}
+
+.card .button-blue:hover {
+    background-color: #295D67 !important;
+}
+
+.reverse-cart .btn-green:hover {
+    background-color: #004E34;
+
+}
+
+
+.text-center-flex{
+    display: flex !important;
+    justify-content: center !important;
+  
+}
+.text-center h5 {
+    width: 43%;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #000000;
+    font-weight: 600;
+    margin: 32px 0 !important;
+}
+.text-center h5 a{
+    text-decoration: underline;
+    color: #000000;
+}
+
+footer{
+    box-shadow: 0 -1px 3px rgba(0,0,0,.1), 0 -2px 2px rgba(0,0,0,.06), 0 0 2px rgba(0,0,0,.07);
+}
+.cards{
+    display: flex;
+    
+    padding:24px 0 0  0  !important;
+    }
+
+.footer-card{
+    width: 190px !important;
+    margin: 0 0 0 32px !important;
+}
+.footer-card:first-child{
+    margin: 0 !important;
+}
+.footer-card h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 24px !important;
+}
+.footer-card a{
+    display: inline-block ;
+    margin: 0 0 8px !important;
+    padding:  8px 0 !important;
+    color: rgba(0,0,0,.58);
+    font-size: 16px ;
+}
+.social{
+    border-top: 1px solid #E5E5E5;
+}
+ .social ul{
+display: flex;
+margin-top: 12px !important;
+}
+.social ul li{
+    width: 32px;
+    height: 32px ;
+}
+
+.footer-bottom ul{
+    display: flex;
+}
+.footer-bottom ul li a{
+    font-size: 16px;
+    padding:  0 16px 0 0 !important ;
+    color: black;
+}
+.footer-bottom p{
+    margin-top: 12px !important;
+    color: #6B6B6B;
 }
