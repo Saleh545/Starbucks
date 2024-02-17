@@ -97,9 +97,7 @@ const Main = () => {
               <h1 className="two-text savory">Savory and satisfying</h1>
 
               <p className="two-p savory">
-                Treat yourself and a friend to swirls of happiness and rich java
-                chips with the new Chocolate-Covered Strawberry Crème
-                Frappuccino® drink. Here for a limited time.
+              Grab a subtly sweet Chicken, Maple Butter & Egg Sandwich on the way.
               </p>
               <button className="order hover-blue">Order now</button>
             </div>
@@ -120,7 +118,7 @@ const Main = () => {
             <div className="text">
               <h1 className="total white ">Protein-packed goodness</h1>
 
-              <p className="pinkp white">
+              <p className="pinkp white fs-24">
                 Enjoy the fluffy Egg White & Roasted Red Pepper Egg Bites and
                 Bacon & Gruyère Egg Bites, both 300 calories or less.
               </p>
@@ -142,7 +140,7 @@ const Main = () => {
             <div className="text">
               <h1 className="white">“A smile makes a big difference.”</h1>
 
-              <p className="white">- Brenda, Starbucks Partner (Employee)</p>
+              <p className="white green-brenda">- Brenda, Starbucks Partner (Employee)</p>
               <p className="white">
                 Our partners uplift each other and their communities every day.
               </p>
@@ -173,18 +171,19 @@ const Main = () => {
           <div className="cards">
             <div className="footer-card">
               <h1>About Us</h1>
-              <a href="#">Our company</a>
+              <a href="#">Our Company</a>
               <a href="#">Our Coffee</a>
               <a href="#">Stories and News</a>
               <a href="#">Starbucks Archive</a>
-              <a href="#">Investor Service</a>
+              <a href="#">Investor Relations</a>
+              <a href="#">Customer Service</a>
               <a href="#">Contact Us</a>
             </div>
             <div className="footer-card">
               <h1>Careers</h1>
-              <a href="#">Culture and Value</a>
+              <a href="#">Culture and Values</a>
               <a href="#">Inclusion, Diversity, and Equity</a>
-              <a href="#">College Achievement</a>
+              <a href="#">College Achievement   Plan </a>
               <a href="#">Alumni Community</a>
               <a href="#">U.S Careers</a>
               <a href="#">International Careers</a>
@@ -204,6 +203,7 @@ const Main = () => {
             </div>
             <div className="footer-card">
               <h1>Order and Pick Up</h1>
+              <a href="#">Order on the App</a>
               <a href="#">Order on the Web</a>
               <a href="#">Delivery</a>
               <a href="#">Order and Pick Up Options</a>
@@ -217,7 +217,7 @@ const Main = () => {
                 <FaSpotify />
               </li>
               <li>
-                <FaFacebook />
+                <  FaFacebook />
               </li>
               <li>
                 <FaPinterest />
@@ -236,12 +236,12 @@ const Main = () => {
 
         <div className="footer-bottom">
           <ul>
-            <li><a href=""> Privacy Notice</a></li>
-            <li><a href=""> | Terms of Use</a></li>
-            <li><a href=""> | Do Not Share My Personal Information</a></li>
-            <li><a href=""> | CA Supply Chain Act</a></li>
-            <li><a href=""> | Accessibility</a></li>
-            <li><a href=""> | Cookie Preferences</a></li>
+            <li><a href="" className="border-none"> Privacy Notice</a></li>
+            <li><a href=""> Terms of Use</a></li>
+            <li><a href="">  Do Not Share My Personal Information</a></li>
+            <li><a href=""> CA Supply Chain Act</a></li>
+            <li><a href="">  Accessibility</a></li>
+            <li><a href=""> Cookie Preferences</a></li>
           </ul>
           <p>© 2024 Starbucks Coffee Company. All rights reserved.</p>
         </div>
