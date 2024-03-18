@@ -8,6 +8,13 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 import { FaSquareTwitter } from "react-icons/fa6";
+import Accordion from '@mui/material/Accordion';
+import AccordionActions from '@mui/material/AccordionActions';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Button from '@mui/material/Button';
+
 
 const Main = () => {
   return (
@@ -45,7 +52,7 @@ const Main = () => {
             />
           </div>
           <div className="right">
-            <div className="text-two">
+            <div className="text-two text">
               <h1 className="two-text">What the heart wants</h1>
 
               <p className="two-p">
@@ -93,7 +100,7 @@ const Main = () => {
             />
           </div>
           <div className="right bck-blue">
-            <div className="text-two">
+            <div className="text-two text">
               <h1 className="two-text savory">Savory and satisfying</h1>
 
               <p className="two-p savory">
@@ -169,6 +176,97 @@ const Main = () => {
       <footer>
         <div className="container">
           <div className="cards">
+
+
+
+<div className="accordion">
+          <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1-content"
+          id="panel1-header"
+        >
+              <h1>About Us</h1>
+        </AccordionSummary>
+        <AccordionDetails>
+              <a href="#">Our Company</a>
+              <a href="#">Our Coffee</a>
+              <a href="#">Stories and News</a>
+              <a href="#">Starbucks Archive</a>
+              <a href="#">Investor Relations</a>
+              <a href="#">Customer Service</a>
+              <a href="#">Contact Us</a>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel2-content"
+          id="panel2-header"
+        >
+              <h1>Careers</h1>
+        </AccordionSummary>
+        <AccordionDetails>
+              <a href="#">Culture and Values</a>
+              <a href="#">Inclusion, Diversity, and Equity</a>
+              <a href="#">College Achievement   Plan </a>
+              <a href="#">Alumni Community</a>
+              <a href="#">U.S Careers</a>
+              <a href="#">International Careers</a>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3-content"
+          id="panel3-header"
+        >
+              <h1>Social Impact</h1>
+        </AccordionSummary >
+        <AccordionDetails>
+              <a href="#">People</a>
+              <a href="#">Planet</a>
+              <a href="#">Environmental and Social Impact Reporting</a>
+        </AccordionDetails>
+      </Accordion>
+
+
+      <Accordion >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3-content"
+          id="panel3-header"
+        >
+              <h1>For Business Partners</h1>
+        </AccordionSummary >
+        <AccordionDetails>
+              <a href="#">Landlord Support Center</a>
+              <a href="#">Suppliers</a>
+              <a href="#">Corporate Gift Card Sales</a>
+              <a href="#">Office and Foodservice Coffee</a>
+        </AccordionDetails>
+      </Accordion> 
+      
+          <Accordion >
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel3-content"
+          id="panel3-header"
+        >
+              <h1>Order and Pick Up</h1>
+        </AccordionSummary >
+        <AccordionDetails>
+        <a href="#">Order on the App</a>
+              <a href="#">Order on the Web</a>
+              <a href="#">Delivery</a>
+              <a href="#">Order and Pick Up Options</a>
+              <a href="#">Explore and Find Coffee for Home</a>
+        </AccordionDetails>
+      </Accordion>
+      </div>
+
+
+                    <div className="none-card">
             <div className="footer-card">
               <h1>About Us</h1>
               <a href="#">Our Company</a>
@@ -209,6 +307,7 @@ const Main = () => {
               <a href="#">Order and Pick Up Options</a>
               <a href="#">Explore and Find Coffee for Home</a>
             </div>
+            </div>
           </div>
 
           <div className="social">
@@ -245,7 +344,7 @@ const Main = () => {
           </ul>
           <p>© 2024 Starbucks Coffee Company. All rights reserved.</p>
         </div>
-
+ 
         </div>
       </footer>
     </>
