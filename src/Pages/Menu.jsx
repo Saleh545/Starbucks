@@ -1,19 +1,18 @@
 import React from "react";
 import Header from "../components/Header/Header";
-import Main from "../components/Main/Main"
 import Footer from "../components/footer/Footer";
+import MenuItems from "../components/Menu/MenuItems";
 
-const Home = () => {
+
+const Menu = () => {
   return (
-
     <div>
-
       <Header />
-      <Main />
-      <Footer/>
+      <MenuItems/>
+      <Footer />
       
     </div>
   );
 };
 
-export default Home;
+export default Menu;

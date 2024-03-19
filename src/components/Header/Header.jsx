@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { Fade, Fade as Hamburger } from "hamburger-react";
-
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,23 +20,24 @@ const Header = () => {
         <div className="container">
           <div className="header">
             <div className="img">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/446px-Starbucks_Corporation_Logo_2011.svg.png?20170312192423"
-                alt=""
-              />
+              <NavLink to="/">
+              <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/446px-Starbucks_Corporation_Logo_2011.svg.png?20170312192423" alt=""/>
+
+              </NavLink>
             </div>
 
-            <nav className={menuOpen ? "navTransformOpen" : "navTransformClose"}
+            <nav
+              className={menuOpen ? "navTransformOpen" : "navTransformClose"}
             >
               <ul>
                 <li>
-                  <a href="">menu</a>
+                  <NavLink to="/Menu">menu</NavLink>
                 </li>
                 <li>
-                  <a href="">rewards</a>
+                  <NavLink to="/A">rewards</NavLink>
                 </li>
                 <li>
-                  <a href="">gift cards</a>
+                  <NavLink to="/s">gift cards</NavLink>
                 </li>
               </ul>
 

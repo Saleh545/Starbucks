@@ -55,9 +55,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(0, 113, 64);
+    color: #00754A;
 }
-
+nav ul li  .active{
+    border-bottom: 6px solid #00754A;
+    padding-bottom: 36px !important;
+}
 
 .img {
 
@@ -173,6 +176,10 @@ nav ul li a:hover {
     .header {
         padding: 18px 22px !important;
     }
+    nav ul li  .active{
+        border-bottom: none;
+        padding-bottom: 0 !important;
+    }
 
     .header .resp-bar{
         display: block;
@@ -245,6 +252,7 @@ nav ul li a:hover {
     .navTransformOpen{
         transform: translate(30%);
     }
+
     
 }
 
@@ -254,6 +262,10 @@ nav ul li a:hover {
     }
      .header {
         padding: 18px 22px !important;
+    }
+    nav ul li  .active{
+        border-bottom: none;
+        padding-bottom: 0 !important;
     }
 
     .header .resp-bar{
