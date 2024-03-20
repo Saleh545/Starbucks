@@ -1,116 +1,80 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Menu/menu.css";
 import { NavLink } from "react-router-dom";
-import { Col, Row } from "reactstrap";
+import axios from "axios";
+import { CardImg } from "reactstrap";
 
 const MenuItems = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios.get("Copy.json").then((res) => {
+      setData(res.data.coffee);
+      console.log(res.data.coffee);
+    });
+  }, []);
+
+  const Subcategories = [...new Set(data.map((item) => item.subcategory))];
+
   return (
     <div>
       <div className="menu-nav">
         <div className="container">
           <ul>
             <li>
-              <NavLink>menu</NavLink>
+              <NavLink to="/">menu</NavLink>
             </li>
             <li>
-              <NavLink>featured</NavLink>
+              <NavLink to="/">featured</NavLink>
             </li>
             <li>
-              <NavLink>previous</NavLink>
+              <NavLink to="/">previous</NavLink>
             </li>
             <li>
-              <NavLink>favorites</NavLink>
+              <NavLink to="/">favorites</NavLink>
             </li>
           </ul>
         </div>
       </div>
-
       <div className="product">
         <div className="container">
           <div className="product-menu">
-            <div className="drinks">
+            <div className="drinks-left">
               <ul>
                 <li className="product-bottom">
-                  <span>drinks</span>
+                  <span>Drinks</span>
                   <ul className="product-flex">
-                    <li>
-                      <NavLink>Oleato™</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Hot Coffees</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Hot Teas</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Hot Drinks</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Frappuccino® Blended Beverages</NavLink>
-                    </li>
-                  </ul>
-                </li>
-                <li className="product-bottom">
-                  <span>drinks</span>
-                  <ul className="product-flex">
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                  </ul>
-                </li>{" "}
-                <li className="product-bottom">
-                  <span>drinks</span>
-                  <ul className="product-flex">
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                  </ul>
-                </li>{" "}
-                <li className="product-bottom">
-                  <span>drinks</span>
-                  <ul className="product-flex">
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
-                    <li>
-                      <NavLink>Coffee</NavLink>
-                    </li>
+                    {Subcategories.map((subcategory, index) => (
+                      <li key={index}>
+                        <NavLink to={`/${subcategory.id}`} key={subcategory.id}>
+                          {subcategory}
+                        </NavLink>
+                      </li>
+                    ))}
                   </ul>
                 </li>
               </ul>
+            </div>
+            <div className="drinks-right">
+              <h1>menu</h1>
+
+              <div className="drinks">
+                <h2>Drinks</h2>
+
+                <div className="drinks-grid">
+                  {Subcategories.map((subcategory, index) => (
+                    <div key={index} className="drinks-item">
+                      <NavLink to={`/${subcategory.id}`} key={index}>
+                        <div className="imgg">
+                          <CardImg src={data.find((item) => item.subcategory === subcategory).img}alt=""/>
+                        </div>
+                        <h3>{subcategory}</h3>
+                      </NavLink>
+                    </div>
+
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -47,7 +47,7 @@ a {
     display: flex;
 }
 
-.product .drinks {
+.product .drinks-left {
     width: 11%;
 
 }
@@ -76,4 +76,98 @@ a {
 
 .product .product-bottom {
     margin-bottom: 24px !important;
+}
+
+.product-menu {
+    display: flex;
+}
+
+.drinks-right {
+    margin-left: 119px !important;
+    width: 62.5%;
+}
+
+.drinks-right h1 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 48px !important;
+}
+
+.drinks h2 {
+    font-weight: 700;
+    font-size: 24px;
+    border-bottom: 2px solid #0000001a;
+    padding-bottom: 16px !important;
+}
+
+.drinks-grid {
+    display: flex;
+    flex-wrap: wrap !important;
+    row-gap: 32px;
+    margin: 32px 0 60px 0 !important;
+}
+
+.drinks-item {
+    width: 50%;
+}
+
+.drinks-item a {
+    display: flex !important;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.drinks-item h3 {
+    text-transform: capitalize;
+    color: #000000de;
+}
+
+.drinks-item  .imgg img {
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    object-fit: cover !important;
+
+}
+
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px !important
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 750px !important
+    }
+
+    .product .drinks-left {
+        display: none;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px !important
+    }
+    .product .drinks-left {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1180px !important
+    }
+}
+
+@media (max-width: 1700px) {
+    .container {
+        max-width: 1660px !important
+    }
 }
