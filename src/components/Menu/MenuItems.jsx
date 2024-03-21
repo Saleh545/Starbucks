@@ -8,9 +8,9 @@ const MenuItems = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("Copy.json").then((res) => {
-      setData(res.data.coffee);
-      console.log(res.data.coffee);
+    axios.get("http://localhost:8000/coffee").then((res) => {
+      setData(res.data);
+      console.log(res.data);
     });
   }, []);
 
@@ -43,15 +43,17 @@ const MenuItems = () => {
               <ul>
                 <li className="product-bottom">
                   <span>Drinks</span>
-                  <ul className="product-flex">
-                    {Subcategories.map((subcategory, index) => (
-                      <li key={index}>
-                        <NavLink to={`/${subcategory.id}`} key={subcategory.id}>
-                          {subcategory}
-                        </NavLink>
-                      </li>
-                    ))}
-                  </ul>
+
+                <ul className="product-flex">
+  {Subcategories.map((subcategory,index) => (
+    <li key={index}>
+      <NavLink to={`/${subcategory.id}`} key={subcategory.id}>
+        {subcategory}
+      </NavLink>
+    </li>
+  ))}
+</ul>
+
                 </li>
               </ul>
             </div>
@@ -60,19 +62,22 @@ const MenuItems = () => {
 
               <div className="drinks">
                 <h2>Drinks</h2>
-
                 <div className="drinks-grid">
-                  {Subcategories.map((subcategory, index) => (
-                    <div key={index} className="drinks-item">
-                      <NavLink to={`/${subcategory.id}`} key={index}>
-                        <div className="imgg">
-                          <CardImg src={data.find((item) => item.subcategory === subcategory).img}alt=""/>
-                        </div>
-                        <h3>{subcategory}</h3>
-                      </NavLink>
-                    </div>
-
-                  ))}
+                  {Subcategories.map((subcategory) => {
+                    const item = data.find(
+                      (item) => item.subcategory === subcategory
+                    );
+                    return (
+                      <div key={item.id} className="drinks-item">
+                        <NavLink to={`${item.id}`} key={item.id}>
+                          <div className="imgg">
+                            <img src={item.img} alt="" />
+                          </div>
+                          <h3>{item.subcategory}</h3>
+                        </NavLink>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
