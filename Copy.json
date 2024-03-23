@@ -834,7 +834,8 @@
     },
     {
       "id": 29,
-      "name": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190716_PeppermintWhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630",
+      "name":"Coca coffee",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190716_PeppermintWhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Hot Coffees",
       "type": "Mochas",

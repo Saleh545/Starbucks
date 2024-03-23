@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../Menu/menu.css";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
-import { CardImg } from "reactstrap";
 
 const MenuItems = () => {
   const [data, setData] = useState([]);
@@ -63,13 +62,18 @@ const MenuItems = () => {
               <div className="drinks">
                 <h2>Drinks</h2>
                 <div className="drinks-grid">
+
                   {Subcategories.map((subcategory) => {
                     const item = data.find(
                       (item) => item.subcategory === subcategory
                     );
+
+
                     return (
                       <div key={item.id} className="drinks-item">
-                        <NavLink to={`${item.id}`} key={item.id}>
+
+                        <NavLink to={`drinks/${item.id}`} key={item.id}>
+
                           <div className="imgg">
                             <img src={item.img} alt="" />
                           </div>
@@ -78,6 +82,8 @@ const MenuItems = () => {
                       </div>
                     );
                   })}
+
+                  
                 </div>
               </div>
             </div>
