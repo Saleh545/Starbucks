@@ -17,6 +17,7 @@ const Rewards = () => {
       <div className="rewards">
         <div className="rewards-header">
           <h1>Starbucks® Rewards</h1>
+          <button className="join-in ">Join in the app</button>
         </div>
         <div className="rewards-img">
           <div className="rewards-text">
@@ -27,8 +28,11 @@ const Rewards = () => {
             </h2>
             <p>Join now to start earning Rewards.</p>
             <button className="rewards-join">Join now</button>
-            <span>
+            <span className="text1">
               Or <Link>join in the app</Link> for the best experience
+            </span>
+            <span className="text2">
+               <Link>Or join online</Link> 
             </span>
           </div>
         </div>
@@ -408,7 +412,7 @@ const Rewards = () => {
               <div className="keep-flex">
                 <div className="keep-card">
                   <div className="keep-img">
-                    <img
+                    <img className="img"
                       src="https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/delta-skymiles.png"
                       alt=""
                     />
@@ -421,7 +425,7 @@ const Rewards = () => {
                 </div>
                 <div className="keep-card">
                   <div className="keep-img">
-                    <img
+                    <img className="img"
                       src="	https://www.starbucks.com/weblx/images/rewards/loyalty-partnerships/bank-of-america.png"
                       alt=""
                     />

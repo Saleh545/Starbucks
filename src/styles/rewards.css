@@ -6,7 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 
 }
 
@@ -19,7 +19,7 @@
 
 .rewards-header {
     background-color: #1E3932;
-    padding: 0 0 0 40px !important;
+    padding: 0 40px !important;
     height: 50px;
     position: sticky;
     top: 0 !important;
@@ -28,6 +28,8 @@
     box-shadow: 0 4px 4px 0 #0000001f, 0 0 2px 0 #0000003d;
     display: flex;
     align-items: center;
+    z-index: 0;
+    justify-content: space-between;
 }
 
 .rewards-header h1 {
@@ -38,10 +40,24 @@
     letter-spacing: 1px;
 }
 
+.rewards-header .join-in {
+    border: 1px solid white;
+    background: transparent;
+    outline: none;
+    border-radius: 50px;
+    padding: 7px 16px !important;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    width: auto;
+    display: none;
+}
+
 .rewards-img {
     background: url("/images/xl-hero-desktop_2021.jpg");
     background-position: 37%;
     background-repeat: no-repeat;
+    background-size: cover;
     background-size: auto 100%;
     height: 100vh;
     background-color: rgb(212, 233, 226);
@@ -57,7 +73,7 @@
     font-weight: 600;
     cursor: pointer;
     color: #fff;
-    width: 12%;
+    width: 101px;
 }
 
 .rewards-join:hover {
@@ -79,6 +95,7 @@
     text-transform: uppercase;
     font-weight: 600;
     line-height: 1.29;
+    letter-spacing: 1px;
 }
 
 .rewards-text p {
@@ -91,10 +108,15 @@
     margin-top: 16px !important;
 }
 
+.rewards-text .text2 {
+    display: none;
+}
+
 .rewards-text span a {
     text-decoration: underline !important;
     color: black;
 }
+
 
 .getting-started {
     margin-top: 128px !important;
@@ -191,13 +213,13 @@
 }
 
 .favorite-flex {
-    display: flex ;
+    display: flex;
     justify-content: center !important;
     background-color: #D4E9E2 !important;
     padding: 32px 0 !important;
 }
 
-.favorite-content .active-content{
+.favorite-content .active-content {
     display: none;
 }
 
@@ -225,164 +247,201 @@
     line-height: 1.5;
 }
 
-.Endless{
+.Endless {
     margin-top: 128px !important;
     text-align: center;
 }
-.endless-up{
-width: 50%;
-margin-left: 25% !important;
+
+.endless-up {
+    width: 50%;
+    margin-left: 25% !important;
 }
-.endless-up h1{
+
+.endless-up h1 {
     font-size: 28px;
     margin-bottom: 16px !important;
 }
-.endless-up p{
+
+.endless-up p {
     font-size: 16px;
     line-height: 1.4;
 }
-.endless-flex{
+
+.endless-flex {
     display: flex;
     justify-content: center;
     gap: 48px;
     margin: 48px 0 128px 0 !important;
 }
-.endless-card{
+
+.endless-card {
     width: 26%;
 }
-.endless-card img{
+
+.endless-card img {
     width: 112px;
     height: 112px;
 
 }
-.endless-card h2{
+
+.endless-card h2 {
     font-size: 19px;
     font-weight: 600;
     margin: 24px 0 20px 0 !important;
 }
-.endless-card p{
+
+.endless-card p {
     font-size: 16px;
     margin-bottom: 16px !important;
     width: 100%;
     line-height: 1.4;
 }
-.endless-card a{
+
+.endless-card a {
     font-size: 16px;
     text-decoration: underline !important;
     color: #006241;
 }
-.cash{
+
+.cash {
     background-color: #F2F0EB;
+    padding: 48px 0 !important;
 }
-.cash hr{
+
+.cash hr {
     border-color: #0000001a;
     margin: 24px 0 48px 0 !important;
 }
-.cash-up{
-    margin-top: 48px !important;
+
+.cash-up {
     width: 48%;
     margin-left: 25% !important;
     margin-bottom: 80px !important;
     text-align: center;
 }
-.cash-up h2{
-font-size: 28px ;
-font-weight: 600;
-padding-bottom: 16px !important;
+
+.cash-up h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 16px !important;
 }
-.cash-up p{
-font-size: 16px;
-line-height: 1.4;
+
+.cash-up p {
+    font-size: 16px;
+    line-height: 1.4;
 
 }
-.cash-flex{
+
+.cash-flex {
     display: flex;
+    padding: 0 16px !important;
 }
-.card1{
+
+.card1 {
     display: flex;
     padding: 0 24px !important;
     width: 33%;
 }
-.cash-img img{
-    width: 112px ;
+
+.cash-img img {
+    width: 112px;
     height: 158px;
     margin-right: 16px !important;
 }
-.cash-text{
+
+.cash-text {
     display: block;
     width: 16.7%;
 }
-.cash-text h5{
+
+.cash-text h5 {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 10px !important;
 }
-.cash-text h5 span{
+
+.cash-text h5 span {
     font-size: 19px;
 }
-.cash-text p{
+
+.cash-text p {
     font-size: 16px;
 }
-.card-text h4{
+
+.card-text h4 {
     padding-bottom: 20px !important;
-    font-size: 19px ;
+    font-size: 19px;
     font-weight: 600;
 }
-.card-text p{
+
+.card-text p {
     font-size: 16px;
     line-height: 1.5;
 }
-.keep{
+
+.keep {
     background: url("https://www.starbucks.com/app-assets/844262945b2a8b8cfb293156e2583872.png");
     background-size: cover;
     height: 100vh;
     padding: 40px !important;
 }
-.keep-content{
+
+.keep-content {
     background-color: #D4E9E2;
     display: flex;
     padding: 40px 0 !important;
 }
-.keep-img img{
+
+.keep-img img {
     object-fit: cover;
     width: 288px;
     height: 518px;
 }
-.keep-card .keep-img img{
+
+.keep-card .keep-img .img {
     width: 190px !important;
     height: 85px !important;
+    object-fit: fill;
 }
-.keep-center{
-    display: block !important; 
-padding: 47px 20px 0 20px!important;
-text-align: center;
+
+.keep-center {
+    display: block !important;
+    padding: 47px 20px 0 20px !important;
+    text-align: center;
 }
-.keep-flex{
+
+.keep-flex {
     display: flex;
     column-gap: 24px;
     padding: 32px 0 !important;
 }
-.keep-up h2{
+
+.keep-up h2 {
     font-size: 28px;
     padding-bottom: 16px !important;
-    font-weight: 600 ;
+    font-weight: 600;
 }
-.keep-up p{
+
+.keep-up p {
     font-size: 16px;
     line-height: 1.7;
 }
+
 .keep-card {
     padding: 20px 0 !important;
 }
-.keep-card p{
+
+.keep-card p {
     font-size: 16px;
     line-height: 1.5;
 }
-.keep-card p a{
+
+.keep-card p a {
     text-decoration: underline !important;
     color: #006241;
 }
-.keep-center  button{
+
+.keep-center button {
     padding: 7px 16px !important;
     border-radius: 50px;
     border: none;
@@ -392,55 +451,325 @@ text-align: center;
     background-color: #00754A;
     margin-top: 28px !important;
 }
-.questions{
+
+.questions {
     padding: 64px 0 !important;
 }
+
 .que-text {
-width: 50%;
-margin-left: 16.66667% !important;
+    width: 50%;
+    margin-left: 16.66667% !important;
 }
-.que-text h2{
+
+.que-text h2 {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 16px !important;
 }
-.que-text p{
+
+.que-text p {
     font-size: 14px;
     line-height: 1.8;
 }
-.que-text p a{
-    text-decoration: underline !important;
-    color: #006241;
-}
-.text-bottom{
-    background-color: #F9F9F9;
-    margin-bottom: 48px !important;
-}
-.bottom-text{
-padding: 48px 0 !important;
-}
-.bottom-text p{
-    margin-bottom: 8px !important; 
-    font-size: 14px;
-    line-height: 1.6;
-}
-.bottom-text p a{
+
+.que-text p a {
     text-decoration: underline !important;
     color: #006241;
 }
 
-.bottom-flex{
+.text-bottom {
+    background-color: #F9F9F9;
+    margin-bottom: 48px !important;
+}
+
+.bottom-text {
+    padding: 48px 16px !important;
+}
+
+.bottom-text p {
+    margin-bottom: 8px !important;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.bottom-text p a {
+    text-decoration: underline !important;
+    color: #006241;
+}
+
+.bottom-flex {
     display: flex;
     gap: 32px;
     margin-top: 16px !important;
 }
-.bottom-card h3{
+
+.bottom-card h3 {
     font-size: 14px;
     margin-bottom: 24px !important;
     margin-top: 12px !important;
     font-weight: 700;
     color: #00000094;
 }
-.bottom-card2{
+
+.bottom-card2 {
     margin-top: 64px !important;
+}
+
+
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px !important
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 750px !important
+    }
+
+    .rewards-header .join-in {
+        display: block;
+    }
+
+    .rewards-img {
+        background-position: 66%;
+    }
+
+    .rewards-text {
+        width: 100%;
+        padding: 32px 16px !important;
+        justify-content: left;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    .rewards-text .text2 {
+        display: block !important;
+    }
+
+    .rewards-text h2 {
+        font-size: 28px;
+    }
+
+    .rewards-text p {
+        font-size: 19px;
+    }
+
+    .rewards-join {
+        width: 29%;
+    }
+
+    .rewards-text .text1 {
+        display: none;
+    }
+
+    .getting-flex {
+        flex-direction: column;
+        text-align: left !important;
+
+    }
+
+    .card-content {
+        text-align: left;
+    }
+
+    .getting-card {
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding: 0 16px !important;
+    }
+
+    .getting-img img {
+        margin-bottom: 24px !important;
+    }
+
+    .favorite-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .favorite-img img {
+        width: 100% !important;
+        height: 100%;
+    }
+
+    .favorite-text {
+        width: 100%;
+        text-align: center;
+        padding: 0 16px !important;
+        margin: 0 !important;
+    }
+
+    .favorites-button button {
+        padding: 8px 12px 14px !important;
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .Endless {
+        margin-top: 80px !important;
+    }
+
+    .endless-up {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 16px !important;
+    }
+
+    .endless-up h1 {
+        font-size: 24px;
+    }
+
+    .endless-up p {
+        font-size: 14px;
+    }
+
+    .endless-flex {
+        flex-direction: column;
+    }
+
+    .endless-card {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 13px;
+        text-align: left;
+        padding: 0 16px !important;
+    }
+
+    .cash-up {
+        width: 100%;
+        margin: 0 0 80px !important;
+        padding: 0 16px !important;
+    }
+
+    .cash-flex {
+        flex-direction: column;
+    }
+
+    .cash-text {
+        width: 100%;
+        margin-bottom: 35px !important;
+    }
+
+    .keep-img {
+        display: none;
+    }
+
+    .keep-card .keep-img {
+        display: block;
+        object-fit: cover !important;
+    }
+
+    .keep-card .keep-img .img {
+        width: 112px !important;
+        height: 50px !important;
+    }
+
+    .keep-up h2 {
+        font-size: 24px;
+    }
+
+    .keep-up p {
+        font-size: 14px;
+    }
+
+    .keep-card p {
+        font-size: 14px;
+    }
+
+    .keep {
+        background: none;
+        padding: 0 !important;
+        height: auto;
+    }
+
+    .keep-flex {
+        flex-direction: column;
+        row-gap: 35px;
+    }
+
+    .keep-content {
+        width: 100%;
+    }
+
+    .keep-card {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px !important;
+        text-align: left;
+    }
+
+    .que-text {
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 16px !important;
+    }
+
+    .que-text h2 {
+
+        font-size: 24px;
+    }
+
+    .bottom-text {
+        padding: 48px 16px !important;
+    }
+
+    .bottom-flex {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px !important
+    }
+
+    .rewards-text .text2 {
+        display: none;
+    }
+
+    .rewards-img {
+        background-position: 62%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .keep-img img {
+        width: 149px;
+        height: 465px;
+    }
+
+    .card1 {
+        margin-bottom: 20px !important;
+    }
+
+    .keep {
+        height: 81vh;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1180px !important;
+    }
+
+    .card1 {
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 1700px) {
+    .container {
+        max-width: 1440px !important;
+    }
 }
