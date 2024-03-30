@@ -87,9 +87,16 @@ nav ul li  .active{
     gap: 16px;
 }
 
-.right .loc {
+
+.right .location button {
     border: none;
-    outline: none;
+    outline: none !important;
+    background: none;
+   
+}
+.right .location button  a{
+    border: none;
+    outline: none !important;
     background: none;
     display: flex;
     align-items: center;
@@ -97,6 +104,10 @@ nav ul li  .active{
     font-weight: 600;
     margin-right: 40px !important;
     cursor: pointer;
+    color: black;
+}
+.right .location button .active{
+    border-bottom: 6px solid #00754A;
 }
 
 .right .loc:hover {

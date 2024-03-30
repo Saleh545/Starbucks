@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=SoDoSans&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+    overflow: hidden;
+}
+
+.find-flex {
+    margin: 24px 0 0 40px !important;
+}
+
+.input-flex form {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.input-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px !important;
+}
+
+.input-flex form input {
+    border: 0;
+    border-bottom: 1px solid #00000094;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    padding: 0 0 2px 0 !important;
+    font-size: 19px;
+}
+
+.button-find {
+    display: block;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+}
+
+.button-find svg {
+    width: 22px;
+    height: 22px;
+}
+
+.input-flex a {
+    margin-left: 24px !important;
+    color: #00754A;
+    border: 1px solid #00754A;
+    padding: 7px 16px !important;
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.find-text {
+    padding: 24px 16px 24px 40px !important;
+    margin-bottom: 160px !important;
+}
+
+.find-text:hover {
+    background-color: #F0F0F0;
+}
+
+.find-text h2 {
+    font-size: 28px;
+    margin-bottom: 16px !important;
+    font-weight: 600;
+    line-height: 1.385 !important;
+}
+
+.find-text p {
+    font-size: 16px;
+    color: #00000094;
+}
+
+.find-bottom {
+    padding: 24px 24px 90px 40px !important;
+    margin-top: 90px !important;
+}
+
+.find-bottom a {
+    display: block;
+    margin-bottom: 20px !important;
+    font-size: 16px;
+    color: #006241;
+}
+
+.find-bottom a i svg {
+    width: 12px;
+    height: 12px;
+}
+.find{
+    display: flex;
+}
+.find .find-left{
+    width: 61%;
+    margin-right: 40px !important;
+}
+.find .find-right{
+    width: 100% !important;
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width:540px !important
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width:750px !important
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width:960px !important
+    }
+    .flex-none{
+        display: none;
+    }
+    .flex-block{
+        margin: 10px 20px !important;
+    }
+    .find{
+        flex-direction: column-reverse;
+    }
+    .find-right iframe{
+        height: 381px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width:1180px
+    }
+    .flex-block{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1700px) {
+    .container {
+        max-width:1660px
+    }
+}
+.flex-block{
+    display: none;
+}

@@ -1,11 +1,53 @@
 {
+  "category": [
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_GoldenFoam_ColdBrew.jpg?impolicy=1by1_wide_topcrop_630",
+      "title": "Oleato™",
+      "id":1111
+    },
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
+      "title":"Hot Coffees",
+      "id":2222
+    },
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_ChaiLatte.jpg?impolicy=1by1_wide_topcrop_630",
+      "title":"Hot Teas",
+      "id":3333
+    },
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_SignatureHotChocolate.jpg?impolicy=1by1_wide_topcrop_630",
+      "title":"Hot Drinks",
+      "id":4444
+    },
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/FY22WIN_PistachioFrapp-onGreen.jpg?impolicy=1by1_wide_topcrop_630",
+      "title":"Frappuccino Blended Beverages",
+      "id":5555
+    },
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190528_PeppermintWhiteChocolateCremeFrap.jpg?impolicy=1by1_wide_topcrop_630",
+      "title":"Cold Coffees",
+      "id":6666
+    },
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190531_IcedBlackTea.jpg?impolicy=1by1_wide_topcrop_630",
+      "title":"Iced Teas",
+      "id":7777
+    },
+    {
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20181217_DragonDrink.jpg?impolicy=1by1_wide_topcrop_630",
+      "title":"Cold Drinks",
+      "id":8888
+    }
+  ],
   "coffee": [
     {
       "id": 1,
       "name": "Oleato Golden Foam Cold Brew",
       "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_GoldenFoam_ColdBrew.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
-      "subcategory": "Oleato",
+      "subcategory": "Oleato™",
       "sizes": [
         {
           "size": "Tall",
@@ -34,7 +76,7 @@
       "name": "Oleato Caffé Latte with Oatmilk",
       "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
-      "subcategory": "Oleato",
+      "subcategory": "Oleato™",
       "sizes": [
         {
           "size": "Short",
@@ -63,7 +105,7 @@
       "name": "Oleato Iced Shaken Espresso with Oatmilk and Toffeenut",
       "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_ToffeeNut_ShakenEspresso.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
-      "subcategory": "Oleato",
+      "subcategory": "Oleato™",
       "sizes": [
         {
           "size": "Tall",
@@ -834,7 +876,7 @@
     },
     {
       "id": 29,
-      "name":"Coca coffee",
+      "name": "Coca coffee",
       "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190716_PeppermintWhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Hot Coffees",
