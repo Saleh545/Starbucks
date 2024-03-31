@@ -101,39 +101,24 @@ const Rewards = () => {
         <div className="container">
           <h1>Get your favorites for free</h1>
           <div className="favorites-button">
-            <button
-              className={activeIndex === 1 ? " tabs active-content" : "tabs"}
-              onClick={() => handleClick1(1)}
-            >
-              25 <span>★</span>{" "}
+            <button className={activeIndex === 1 ? " tabs active-content" : "tabs"} onClick={() => handleClick1(1)}>
+              25 <span>★</span>
             </button>
 
-            <button
-              className={activeIndex === 2 ? " tabs active-content" : "tabs"}
-              onClick={() => handleClick1(2)}
-            >
-              100 <span>★</span>{" "}
+            <button className={activeIndex === 2 ? " tabs active-content" : "tabs"} onClick={() => handleClick1(2)}>
+              100 <span>★</span>
             </button>
 
-            <button
-              className={activeIndex === 3 ? " tabs active-content" : "tabs"}
-              onClick={() => handleClick1(3)}
-            >
-              200 <span>★</span>{" "}
+            <button className={activeIndex === 3 ? " tabs active-content" : "tabs"} onClick={() => handleClick1(3)}>
+              200 <span>★</span>
             </button>
 
-            <button
-              className={activeIndex === 4 ? " tabs active-content" : "tabs"}
-              onClick={() => handleClick1(4)}
-            >
-              300 <span>★</span>{" "}
+            <button className={activeIndex === 4 ? " tabs active-content" : "tabs"} onClick={() => handleClick1(4)}>
+              300 <span>★</span>
             </button>
 
-            <button
-              className={activeIndex === 5 ? " tabs active-content" : "tabs"}
-              onClick={() => handleClick1(5)}
-            >
-              400 <span>★</span>{" "}
+            <button className={activeIndex === 5 ? " tabs active-content" : "tabs"} onClick={() => handleClick1(5)}>
+              400 <span>★</span>
             </button>
           </div>
         </div>

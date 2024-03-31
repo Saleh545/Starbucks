@@ -15,7 +15,6 @@ const Drinks = () => {
       setDrinks(res.data);
     });
   }, [id]);
-
   return (
     <div>
       <Header />
@@ -53,7 +52,7 @@ const Drinks = () => {
                 <div className="drinks-grid-filter">
                   {drinks.map((item) => (
                     <div key={item.id} className="drinks-item-filter">
-                      <NavLink to={`/Menu/product/subcategory/${item.id}`}>
+                      <NavLink to={`/Menu/product/${item.id}`}>
                         <div className="imgg">
                           <img src={item.img} alt="" />
                         </div>

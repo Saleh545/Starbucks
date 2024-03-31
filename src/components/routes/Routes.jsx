@@ -19,7 +19,7 @@ const AppRoutes = () => {
       <Route path="/Menu/drinks/:id" element={<Drinks />} />
       <Route path="/Gift" element={<Gift />} />
       <Route path="/store-locator" element={<Find />} />
-      <Route path="/Menu/product/subcategory/:id" element={<Coffee/>}/>
+      <Route path="/Menu/product/:id" element={<Coffee/>}/>
     </Routes>
   );
 };

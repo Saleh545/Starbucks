@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=SoDoSans&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1440px !important;
+    margin: 0 auto !important;
+    overflow: hidden;
+}
+.coffees .breadcrumb{
+    display: flex;
+    align-items: center;
+    padding: 16px 40px 16px 131px !important;
+}
+.coffees .breadcrumb{
+    display: inline-flex;
+    height: auto;
+    gap: 4px;
+    margin-top: 10px !important;
+}
+.breadcrumb span{
+    font-size: 16px ;
+    font-weight: 600;
+    color: #00000094;
+}
+
+.coffees .breadcrumb a h1 {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #00000094;
+}
+.coffee-item{
+    display: flex;
+    align-items: center;
+    background-color: #1F3933;
+    padding: 16px 40px 16px 131px !important;
+}
+.coffee-img{
+    width: 300px;
+    height: 300px;
+    margin: 0 88px 0 62px !important;
+
+
+}
+.coffee-img img{
+    border-radius: 50%;
+    width: 100%;
+}
+.coffees .coffee-text{
+    margin-left: 88px !important;
+    max-width: 420px;
+    padding: 0 0 40px 60px !important;
+}
+.coffee-text h3{
+    font-size: 36px;
+    color: white;
+}
+.coffee-text h4{
+    font-size: 24px ;
+    color: #ffffffb3;
+    margin-top: 16px !important;
+    position: relative;
+    display: inline-block;
+}
+.coffee-text h4 span svg{
+    width: 16px ;
+    height: 16px;
+position: absolute;
+top: -4px;
+right: -17px;
+}
