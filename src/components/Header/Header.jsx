@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { Fade, Fade as Hamburger } from "hamburger-react";
-import {  NavLink } from "react-router-dom";
+import {  Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -63,7 +63,7 @@ const Header = () => {
                   </button>
                 </div>
                 <div className="account">
-                  <button className="sign">Sign in</button>
+                  <button className="sign"> <Link to="/account/signin" >Sign in</Link></button>
                   <button className="join">Join now</button>
                 </div>
               </div>

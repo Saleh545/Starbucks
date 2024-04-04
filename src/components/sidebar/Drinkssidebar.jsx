@@ -20,7 +20,7 @@ const Drinkssidebar = () => {
                   <ul className="product-flex">
                     {data.map((item) => (
                       <li key={item.id}>
-                        <NavLink key={item.id} to={`drinks/${item.title}`}>
+                        <NavLink to={`/Menu/drinks/${item.title}`}>
                           {item.title}
                         </NavLink>
                       </li>

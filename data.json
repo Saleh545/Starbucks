@@ -1,53 +1,46 @@
 {
   "category": [
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_GoldenFoam_ColdBrew.jpg?impolicy=1by1_wide_topcrop_630",
-      "title": "Oleato™",
-      "id":1111
+      "id": 1,
+      "name": "Oleato"
     },
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
-      "title":"Hot Coffees",
-      "id":2222
+      "id": 2,
+      "name": "Hot Coffees"
     },
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_ChaiLatte.jpg?impolicy=1by1_wide_topcrop_630",
-      "title":"Hot Teas",
-      "id":3333
+      "id": 3,
+      "name": "Hot Teas"
     },
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_SignatureHotChocolate.jpg?impolicy=1by1_wide_topcrop_630",
-      "title":"Hot Drinks",
-      "id":4444
+      "id": 4,
+      "name": "Hot Drinks"
     },
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/FY22WIN_PistachioFrapp-onGreen.jpg?impolicy=1by1_wide_topcrop_630",
-      "title":"Frappuccino Blended Beverages",
-      "id":5555
+      "id": 5,
+      "name": "Frappuccino Blended Beverages"
     },
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190528_PeppermintWhiteChocolateCremeFrap.jpg?impolicy=1by1_wide_topcrop_630",
-      "title":"Cold Coffees",
-      "id":6666
+      "id": 6,
+      "name": "Cold Coffees"
     },
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190531_IcedBlackTea.jpg?impolicy=1by1_wide_topcrop_630",
-      "title":"Iced Teas",
-      "id":7777
+      "id": 7,
+      "name": "Iced Teas"
     },
     {
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20181217_DragonDrink.jpg?impolicy=1by1_wide_topcrop_630",
-      "title":"Cold Drinks",
-      "id":8888
+      "id": 8,
+      "name": "Cold Drinks"
     }
   ],
+
   "coffee": [
     {
       "id": 1,
       "name": "Oleato Golden Foam Cold Brew",
       "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_GoldenFoam_ColdBrew.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
-      "subcategory": "Oleato™",
+      "subcategory": "Oleato",
       "sizes": [
         {
           "size": "Tall",
@@ -76,7 +69,7 @@
       "name": "Oleato Caffé Latte with Oatmilk",
       "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_CaffeLatte.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
-      "subcategory": "Oleato™",
+      "subcategory": "Oleato",
       "sizes": [
         {
           "size": "Short",
@@ -105,7 +98,7 @@
       "name": "Oleato Iced Shaken Espresso with Oatmilk and Toffeenut",
       "img": "https://globalassets.starbucks.com/digitalassets/products/bev/Oleato_ToffeeNut_ShakenEspresso.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
-      "subcategory": "Oleato™",
+      "subcategory": "Oleato",
       "sizes": [
         {
           "size": "Tall",
@@ -847,7 +840,7 @@
     {
       "id": 28,
       "name": "Caffe Mocha",
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220607_CaffeMocha.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/LavenderOatmilkLatte.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Hot Coffees",
       "type": "Mochas",
@@ -876,8 +869,8 @@
     },
     {
       "id": 29,
-      "name": "Coca coffee",
-      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190716_PeppermintWhiteChocolateMocha.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/LavenderOatmilkLatte.jpg?impolicy=1by1_wide_topcrop_630",
+      "name": "Lavender Oatmilk Latte",
       "category": "Drinks",
       "subcategory": "Hot Coffees",
       "type": "Mochas",
@@ -1267,7 +1260,7 @@
     {
       "id": 42,
       "name": "Peach Tranquility",
-      "img": "https://globalassets.starbucks.com/assets/cf7469c84a444e4f9a341f8023558c77.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/MintMajestyHerbalTea.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Hot Teas",
       "type": "Herbal Teas",
@@ -1917,7 +1910,7 @@
     {
       "id": 65,
       "name": "Double Chocolaty Chip Creme Frappuccino Blended Beverage",
-      "img": "https://globalassets.starbucks.com/assets/e2ffa95d3c364d94b5dba029263bbf0e.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190528_DoubleChocolatyChipCremeFrapp.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Frappuccino Blended Beverages",
       "type": "Creme Frappuccino",
@@ -3062,7 +3055,7 @@
     {
       "id": 110,
       "name": "Mango Dragonfruit Lemonade Starbucks Refreshers Beverage",
-      "img": "https://globalassets.starbucks.com/assets/5474a99cd4854a909613ae6e094dbfc9.jpg?impolicy=1by1_wide_topcrop_630",
+      "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_StrawberryAcaiLemonadeRefreshers.jpg?impolicy=1by1_wide_topcrop_630",
       "category": "Drinks",
       "subcategory": "Cold Drinks",
       "type": "Starbucks Refreshers",

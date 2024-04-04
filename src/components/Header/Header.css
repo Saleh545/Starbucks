@@ -125,6 +125,9 @@ nav ul li  .active{
     font-weight: 600;
     cursor: pointer;
 }
+.right .join a{
+    color: white;
+}
 
 .right .join:hover {
     background-color: #4C4C4C;
@@ -141,7 +144,9 @@ nav ul li  .active{
     padding: 7px 16px !important;
     font-weight: 600;
     cursor: pointer;
-
+}
+.right .sign a{
+color: black;
 }
 
 .right .sign:hover {

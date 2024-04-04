@@ -9,6 +9,7 @@ import Rewards from "../../Pages/Rewards";
 import Gift from "../../Pages/Gift";
 import Find from "../../Pages/Find";
 import Coffee from "../../Pages/Coffee";
+import Sign from "../../Pages/Sign";
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const AppRoutes = () => {
       <Route path="/Gift" element={<Gift />} />
       <Route path="/store-locator" element={<Find />} />
       <Route path="/Menu/product/:id" element={<Coffee/>}/>
+      <Route path="/account/signin" element={<Sign/>} />
     </Routes>
   );
 };

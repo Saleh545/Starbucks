@@ -3,18 +3,18 @@ import axios from "axios";
 import { Link, NavLink, useParams } from "react-router-dom";
 import Header from "../components/Header/Header";
 import Footer from "../components/footer/Footer";
+import { Formik, Form, Field } from "formik";
 import "../styles/coffee.css";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import { CiCirclePlus } from "react-icons/ci";
+import { CiCircleMinus } from "react-icons/ci";
+
+
 
 const Coffee = () => {
   const [coffee, setCoffee] = useState([]);
   const { id } = useParams();
-
-  const [activeIndex, setActiveIndex] = useState(1);
-
-  const handleClick1 = (index) => {
-    setActiveIndex(index);
-  };
+              const [count, setCount] = useState(0);
 
   useEffect(() => {
     axios.get(`http://localhost:3000/coffee?id=${id}`).then((res) => {
@@ -43,9 +43,7 @@ const Coffee = () => {
             </div>
             <div className="coffee-text">
               <h3>{item.name}</h3>
-              {item.sizes.map((size, index) => (
-                <h4 key={index}> </h4>
-              ))}
+
               <h4>
                 330 calories{" "}
                 <span>
@@ -60,14 +58,74 @@ const Coffee = () => {
       <div className="coffe-options">
         <div className="container">
           <div className="coffee-flex">
-            <div className="coffe-left">
+            <div className="coffee-left">
               <h5>Size options</h5>
-              <ul>
-                <li><NavLink><img src="	https://www.starbucks.com/app-assets/76b8892b0db8f5d411988fe1bbbe4141.svg" alt="" /><p>Tall</p><span>12 fl oz</span></NavLink></li>
-                <li><NavLink><img src="	https://www.starbucks.com/app-assets/2920fb2a8c34d3ddb95ad262872526e9.svg" alt="" /><p>Grande</p><span>12 fl oz</span></NavLink></li>
-                <li><NavLink><img src="https://www.starbucks.com/app-assets/55e7819f7cf8e1959ec35e680d46d9a9.svg" alt="" /><p>Venti</p><span>12 fl oz</span></NavLink></li>
-                <li><NavLink><img src="https://www.starbucks.com/app-assets/3abf3fc78365ef0b59bbfd0ecd1c8490.svg" alt="" /><p>Trenta</p><span>12 fl oz</span></NavLink></li>
-              </ul>
+              {coffee.map((item, index) => (
+                <ul key={index}>
+                  <div className="circle"></div>
+
+                  {item.sizes.map((size, sizeIndex) => (
+                    <li key={sizeIndex}>
+                      <NavLink>
+                        <img
+                          src="https://www.starbucks.com/app-assets/76b8892b0db8f5d411988fe1bbbe4141.svg"
+                          alt=""
+                        />
+                        <div>
+                          <p>{size.size}</p>
+                          <span>{size.capacity}</span>
+                        </div>
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
+
+            <div className="coffee-right">
+              <h5>What's included</h5>
+              <Formik
+                initialValues={{ option: "" }}
+                onSubmit={(values) => {
+                  console.log(values);
+                }}
+              >
+                {({ values }) => (
+                  <Form>
+                    <fieldset>
+                      <legend>Milk</legend>
+                      <Field as="select" name="option" id="option">
+                        <option value="Extra Milk Foam">Extra Milk Foam</option>
+                        <option value="Light Milk Foam">Light Milk Foam</option>
+                        <option value="No Milk Foam">No Milk Foam</option>
+                        <option value="Milk Foam">Milk Foam</option>
+                      </Field>
+                    </fieldset>
+
+                    <fieldset>
+                      <legend>Add-ins</legend>
+                      <Field as="select" name="option1" id="option">
+                        <option value="Extra Ice">Extra Ice</option>
+                        <option value="Light Ice">Light Ice</option>
+                        <option value="No ice">No ice</option>
+                        <option value="Ice">Ice</option>
+                      </Field>
+                    </fieldset>
+                    <fieldset>
+                      <legend>Add-ins</legend>
+                     <div className="ins-flex">
+                      <p>Strawberries scoops</p>
+                      <div className="counter">
+
+                      <i onClick={() => setCount(Math.max(count - 1, 0))}><CiCircleMinus /></i>
+                    <span>{count}</span>
+                  <i onClick={() => setCount(count + 1)}><CiCirclePlus /></i>
+                      </div>
+                      </div>
+                    </fieldset>
+                  </Form>
+                )}
+              </Formik>
             </div>
           </div>
         </div>
