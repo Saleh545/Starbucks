@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=SoDoSans&display=swap');
+
 *,
 a {
     margin: 0 !important;
@@ -6,7 +7,7 @@ a {
     box-sizing: border-box !important;
     text-decoration: none !important;
     list-style: none !important;
-    font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif ;
+    font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -123,7 +124,7 @@ a {
     color: #000000de;
 }
 
-.drinks-item  .imgg img {
+.drinks-item .imgg img {
     height: 112px;
     width: 112px;
     border-radius: 50%;
@@ -141,24 +142,55 @@ a {
 
 @media (max-width: 768px) {
     .container {
-        max-width: 750px !important
+        max-width: 750px !important;
     }
 
     .product .drinks-left {
         display: none;
     }
 
+    .menu-nav ul {
+        padding: 16px 0 16px 22px !important;
+    }
+
+    /* 768px ekran genişliğinde product margin sıfırlama */
+    .product {
+        margin-left: 0 !important;
+    }
+
+    .drinks-right {
+        margin-left: 21px !important;
+    }
+
+    .drinks-item {
+        width: 100%;
+    }
 }
 
 @media (max-width: 992px) {
     .container {
-        max-width: 960px !important
+        max-width: 960px !important;
     }
+
     .product .drinks-left {
         display: none;
     }
 
+    .product {
+        margin-left: 46px !important;
+    }
+
+    .drinks-right {
+        width: 100%;
+    }
+
+    .drinks-item .imgg img {
+        width: 72px;
+        height: 72px;
+    }
 }
+
+
 
 @media (max-width: 1200px) {
     .container {
@@ -168,6 +200,6 @@ a {
 
 @media (max-width: 1700px) {
     .container {
-        max-width: 1660px !important
+        max-width: 1660px 
     }
 }

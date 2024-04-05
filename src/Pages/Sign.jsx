@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/footer/Footer";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../styles/sign.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
@@ -26,7 +26,6 @@ const Sign = () => {
   const handleSubmit = (values) => {
     console.log("Form submitted with values:", values);
   };
-
   return (
     <div>
       <div className="parent">
@@ -46,15 +45,13 @@ const Sign = () => {
       <div className="sign-center-h1">
         <h1>Sign in or create an account</h1>
       </div>
-
       <div className="sign-center-box">
         <div className="sign-box">
           <p>* indicates required field</p>
           <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
-            onSubmit={handleSubmit}
-          >
+            onSubmit={handleSubmit}>
             {({ errors, touched }) => (
               <Form>
                 <div className="inputs">
@@ -66,13 +63,11 @@ const Sign = () => {
                     }`}
                     type="text"
                     name="usernameOrEmail"
-                    placeholder="* Username or email adress"
-                  />
+                    placeholder="* Username or email adress"/>
                   <ErrorMessage
                     name="usernameOrEmail"
                     component="div"
-                    className="errorr"
-                  />
+                    className="errorr"/>
                 </div>
                 <div className="eye-flex inputs">
                   <Field
@@ -81,8 +76,7 @@ const Sign = () => {
                     }`}
                     type={showPassword ? "text" : "password"}
                     name="password"
-                    placeholder="* Password"
-                  />
+                    placeholder="* Password"/>
 
                   <div className="eye-icon" onClick={togglePasswordVisibility}>
                     {showPassword ? <IoMdEyeOff /> : <IoMdEye />}
@@ -91,22 +85,41 @@ const Sign = () => {
                 <ErrorMessage
                   name="password"
                   component="div"
-                  className="errorr"
-                />
+                  className="errorr"/>
                 <div className="sign-check">
                   <Field
                     type="checkbox"
                     id="myCheckbox"
-                    className="custom-checkbox"
-                  />
+                    className="custom-checkbox"/>
+                    <p>Keep me signed in.</p>
+                    <Link>Details</Link>
                 </div>
-                <button type="submit">Giriş Yap</button>
+
+                <div className="forgot">
+                  <Link>Forgot your username?</Link>
+                  <Link>Forgot your password?</Link>
+                </div>
+                <div className="sign-button">
+
+                <button type="submit">Sign in</button>
+                </div>
               </Form>
             )}
           </Formik>
         </div>
       </div>
-      <Footer />
+
+      <div className="sign-text-center">
+        <div className="container">
+<div className="sign-center-size">
+
+        <h2>JOIN STARBUCKS® REWARDS</h2>
+        <p>Join Starbucks® Rewards to earn free food and drinks, get free refills, pay and order with your phone, and more.</p>
+        <button>Join now</button>
+</div>
+      </div>
+        </div>
+      <Footer/>
     </div>
   );
 };

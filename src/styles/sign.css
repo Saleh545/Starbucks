@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px 40px !important;
+    margin: 9px 40px 48px !important;
 }
 
 .inputs .error {
@@ -47,7 +47,7 @@
 }
 
 .sign-box {
-    width: 500px;
+    width: 35%;
     box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
     border-radius: 12px;
     padding: 32px !important;
@@ -57,27 +57,32 @@
     margin-bottom: 16px !important;
     font-size: 16px;
     color: #000000de;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.6px;
 }
 
 form .inputs input {
     width: 100%;
-    padding: 12px 16px !important;
-    border-radius: 12px;
+    padding: 18px 16px 16px 16px !important;
+    border-radius: 7px;
     outline: none;
     border: 1px solid gray;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px !important;
+    margin-top: 30px !important;
 }
 
- .inputs input::placeholder {
+.inputs input::placeholder {
     font-size: 19px;
+    color: #000000de;
+    letter-spacing: 0.6px;
 }
 
 .eye-flex {
     position: relative;
-   }
+}
 
 .eye-icon {
     cursor: pointer;
@@ -93,18 +98,161 @@ form .inputs input {
     height: 24px;
     margin-right: 7px !important;
 }
-.error-flex{
+
+.error-flex {
     display: flex;
     gap: 5px;
 }
-.error-flex svg{
+
+.error-flex svg {
     color: #d62b1f;
 }
 
-.sign-check input{
-    background-color: red;
-    color: red;
+.sign-check {
+    margin: 39px 0 10px !important;
+    display: flex;
 }
-  
 
-  
+.sign-check #myCheckbox {
+    accent-color: #00754A;
+    width: 24px;
+    height: 24px;
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+
+.sign-check p {
+    padding: 3px 0 0 10px !important;
+    font-size: 16px;
+}
+
+.sign-check a {
+    text-decoration: underline !important;
+    color: #006241;
+    padding-top: 3px !important;
+    font-weight: 700;
+}
+
+.forgot {
+    margin: 16px 0 0 0 !important;
+}
+
+.forgot a {
+    display: block;
+    text-decoration: underline !important;
+    color: #006241;
+    font-weight: 700;
+    margin-bottom: 10px !important;
+}
+
+.sign-button {
+    text-align: right;
+    margin: 48px 0 8px !important;
+}
+
+.sign-button button {
+    background-color: #00754a;
+    color: white;
+    padding: 18px 24px !important;
+    border-radius: 50px;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    line-height: 1.2;
+    box-shadow: 0 0 6px #0000003d, 0 8px 12px #00000024;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+.sign-text-center h2 {
+    font-size: 14px;
+    color: #00754a;
+    letter-spacing: 1px;
+    margin-bottom: 8px !important;
+}
+
+.sign-center-size {
+    width: 35%;
+    padding: 32px 56px !important;
+    margin: 0 auto !important;
+    text-align: center;
+}
+.sign-text-center p{
+    font-size: 16px;
+    color: #000000de;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 16px !important;
+}
+.sign-text-center  button{
+    border-radius: 50px;
+    padding: 7px 16px !important;
+    border: 1px solid #00754A;
+    outline: none;
+    color: #00754A;
+    background: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.sign-text-center  button:hover{
+    background-color: #E5F1EC;
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width:540px !important
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width:750px !important
+    }
+    .sign-box {
+    width: 100%;
+    }
+    .sign-center-h1 h1{
+        font-size: 24px;
+    }
+    .inputs input::placeholder {
+        font-size: 12px;
+    
+    }
+    .sign-box p{
+        font-size: 14px;
+    }
+    .sign-center-box{
+        margin: 0 !important;
+    }
+    .sign-center-size {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width:960px !important
+    }
+    .sign-center-size {
+        width: 62%;
+    }
+    .sign-box{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width:1180px !important
+    }
+}
+
+@media (max-width: 1700px) {
+    .container {
+        max-width:1660px 
+    }}
