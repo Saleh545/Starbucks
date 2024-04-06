@@ -20,6 +20,12 @@ const Gift = () => {
     
   }, []);  
   const featuredCategory = data.find((category) => category.category === "Featured");
+  const easterCategory = data.find((category) => category.category === "Easter");
+  const siblingCategory = data.find((category) => category.category === "Sibling Appreciation");
+  const petCategory = data.find((category) => category.category === "Pet day");
+  const springCategory = data.find((category) => category.category === "Spring");
+  const appreciationCategory = data.find((category) => category.category === "Appreciation");
+  const adminCategory = data.find((category) => category.category === "Admin Appreciation");
   
   let settings = {
     infinite: false,
@@ -107,575 +113,113 @@ const Gift = () => {
       </div>
 
       <div className="carousel">
-        <h2>EASTER | 3/31</h2>
+  {easterCategory && (
+    <div>
+      <h2>{easterCategory.category}</h2>
+      <Link to="/Gift" className="see-all">{easterCategory.see}</Link>
+    </div>
+  )}
 
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
+  <Slider {...settings}>
+    {easterCategory && easterCategory.cards.map((card) => (
+      <div key={card.id} className="box">
+        <Link to="/Gift">
+          <img src={card.img} alt="" />
+        </Link>
       </div>
-      <div className="carousel">
-        <h2>BIRTHDAY</h2>
+    ))}
+  </Slider>
+</div>
+<div className="carousel">
+  {siblingCategory && (
+    <div>
+      <h2>{siblingCategory.category}</h2>
+      <Link to="/Gift" className="see-all">{siblingCategory.see}</Link>
+    </div>
+  )}
 
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
+  <Slider {...settings}>
+    {siblingCategory && siblingCategory.cards.map((card) => (
+      <div key={card.id} className="box">
+        <Link to="/Gift">
+          <img src={card.img} alt="" />
+        </Link>
       </div>
-      <div className="carousel">
-        <h2>THANK YOU</h2>
+    ))}
+  </Slider>
+</div>
+<div className="carousel">
+  {petCategory && (
+    <div>
+      <h2>{petCategory.category}</h2>
+      <Link to="/Gift" className="see-all">{petCategory.see}</Link>
+    </div>
+  )}
 
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
+  <Slider {...settings}>
+    {petCategory && petCategory.cards.map((card) => (
+      <div key={card.id} className="box">
+        <Link to="/Gift">
+          <img src={card.img} alt="" />
+        </Link>
       </div>
-      <div className="carousel">
-        <h2>CELEBRATION</h2>
+    ))}
+  </Slider>
+</div>
+<div className="carousel">
+  {springCategory && (
+    <div>
+      <h2>{springCategory.category}</h2>
+      <Link to="/Gift" className="see-all">{springCategory.see}</Link>
+    </div>
+  )}
 
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
+  <Slider {...settings}>
+    {springCategory && springCategory.cards.map((card) => (
+      <div key={card.id} className="box">
+        <Link to="/Gift">
+          <img src={card.img} alt="" />
+        </Link>
       </div>
-      <div className="carousel">
-        <h2>SPRING</h2>
+    ))}
+  </Slider>
+</div>
+<div className="carousel">
+  {appreciationCategory && (
+    <div>
+      <h2>{appreciationCategory.category}</h2>
+      <Link to="/Gift" className="see-all">{appreciationCategory.see}</Link>
+    </div>
+  )}
 
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
+  <Slider {...settings}>
+    {appreciationCategory && appreciationCategory.cards.map((card) => (
+      <div key={card.id} className="box">
+        <Link to="/Gift">
+          <img src={card.img} alt="" />
+        </Link>
       </div>
-      <div className="carousel">
-        <h2>APPRECIATION</h2>
+    ))}
+  </Slider>
+</div>
+<div className="carousel">
+  {adminCategory && (
+    <div>
+      <h2>{adminCategory.category}</h2>
+      <Link to="/Gift" className="see-all">{adminCategory.see}</Link>
+    </div>
+  )}
 
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
+  <Slider {...settings}>
+    {adminCategory && adminCategory.cards.map((card) => (
+      <div key={card.id} className="box">
+        <Link to="/Gift">
+          <img src={card.img} alt="" />
+        </Link>
       </div>
-      <div className="carousel">
-        <h2>ENCOURAGEMENT</h2>
-
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
-      </div>
-      <div className="carousel">
-        <h2>WORKPLACE</h2>
-
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
-      </div>
-      <div className="carousel">
-        <h2>AFFECTION</h2>
-
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
-      </div>
-      <div className="carousel">
-        <h2>ANYTIME</h2>
-
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
-      </div>
+    ))}
+  </Slider>
+</div>
 
       <div className="gifting">
         <div className="container">

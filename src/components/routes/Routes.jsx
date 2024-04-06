@@ -11,6 +11,7 @@ import Find from "../../Pages/Find";
 import Coffee from "../../Pages/Coffee";
 import Sign from "../../Pages/Sign";
 import Join from "../../Pages/Join";
+import Company from "../../Pages/Company";
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const AppRoutes = () => {
       <Route path="/Menu/product/:id" element={<Coffee/>}/>
       <Route path="/account/signin" element={<Sign/>} />
       <Route path="/account/create" element={<Join/>} />
+      <Route path="/about-us/" element={<Company/>} />
     </Routes>
   );
 };

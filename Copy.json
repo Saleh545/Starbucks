@@ -3406,6 +3406,14 @@
           "img": "https://globalassets.starbucks.com/digitalassets/cards/fy22/AnnoyingYouFY22.png"
         },
         {
+          "id": "035",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/YouAmazeMeFY23.jpg"
+        },
+        {
+          "id": "036",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/BirthYayBalloonsFY24.png"
+        },
+        {
           "id": "018",
           "img": "https://globalassets.starbucks.com/digitalassets/cards/fy21/FavoriteSiblingFY21.png"
         }
@@ -3424,6 +3432,10 @@
           "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/PlayfulCatsFY23.jpg"
         },
         {
+          "id": "034",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
+        },
+        {
           "id": "021",
           "img": "https://globalassets.starbucks.com/digitalassets/cards/fy22/IWoofYouFY22.png"
         }
@@ -3440,6 +3452,14 @@
         {
           "id": "023",
           "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/SpringSeasonalFY23.jpg"
+        },
+        {
+          "id": "033",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy20/LoveYouGirlFY20.jpg"
+        },
+        {
+          "id": "032",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/BunderfulFY24.png"
         }
       ]
     },
@@ -3458,6 +3478,10 @@
         {
           "id": "026",
           "img": "https://globalassets.starbucks.com/digitalassets/cards/fy23/YoureJustTheBestFY23.jpg"
+        },
+        {
+          "id": "031",
+          "img": "https://globalassets.starbucks.com/digitalassets/cards/fy24/BunderfulFY24.png"
         }
       ]
     },

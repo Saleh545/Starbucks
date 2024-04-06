@@ -11,6 +11,8 @@ import {
   import AccordionSummary from "@mui/material/AccordionSummary";
   import AccordionDetails from "@mui/material/AccordionDetails";
   import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   return (
     <div>
@@ -26,13 +28,13 @@ const Footer = () => {
                   <h1>About Us</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <a href="#">Our Company</a>
-                  <a href="#">Our Coffee</a>
-                  <a href="#">Stories and News</a>
-                  <a href="#">Starbucks Archive</a>
-                  <a href="#">Investor Relations</a>
-                  <a href="#">Customer Service</a>
-                  <a href="#">Contact Us</a>
+                  <Link>Our Company</Link>
+                  <Link>Our Coffee</Link>
+                  <Link>Stories and News</Link>
+                  <Link>Starbucks Archive</Link>
+                  <Link>Investor Relations</Link>
+                  <Link>Customer Service</Link>
+                  <Link>Contact Us</Link>
                 </AccordionDetails>
               </Accordion>
               <Accordion>
@@ -43,12 +45,12 @@ const Footer = () => {
                   <h1>Careers</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <a href="#">Culture and Values</a>
-                  <a href="#">Inclusion, Diversity, and Equity</a>
-                  <a href="#">College Achievement Plan </a>
-                  <a href="#">Alumni Community</a>
-                  <a href="#">U.S Careers</a>
-                  <a href="#">International Careers</a>
+                  <Link>Culture and Values</Link>
+                  <Link>Inclusion, Diversity, and Equity</Link>
+                  <Link>College Achievement Plan </Link>
+                  <Link>Alumni Community</Link>
+                  <Link>U.S Careers</Link>
+                  <Link>International Careers</Link>
                 </AccordionDetails>
               </Accordion>
               <Accordion>
@@ -60,9 +62,9 @@ const Footer = () => {
                   <h1>Social Impact</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <a href="#">People</a>
-                  <a href="#">Planet</a>
-                  <a href="#">Environmental and Social Impact Reporting</a>
+                  <Link>People</Link>
+                  <Link>Planet</Link>
+                  <Link>Environmental and Social Impact Reporting</Link>
                 </AccordionDetails>
               </Accordion>
               <Accordion>
@@ -74,10 +76,10 @@ const Footer = () => {
                   <h1>For Business Partners</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <a href="#">Landlord Support Center</a>
-                  <a href="#">Suppliers</a>
-                  <a href="#">Corporate Gift Card Sales</a>
-                  <a href="#">Office and Foodservice Coffee</a>
+                  <Link>Landlord Support Center</Link>
+                  <Link>Suppliers</Link>
+                  <Link>Corporate Gift Card Sales</Link>
+                  <Link>Office and Foodservice Coffee</Link>
                 </AccordionDetails>
               </Accordion>
 
@@ -90,54 +92,54 @@ const Footer = () => {
                   <h1>Order and Pick Up</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <a href="#">Order on the App</a>
-                  <a href="#">Order on the Web</a>
-                  <a href="#">Delivery</a>
-                  <a href="#">Order and Pick Up Options</a>
-                  <a href="#">Explore and Find Coffee for Home</a>
+                  <Link>Order on the App</Link>
+                  <Link>Order on the Web</Link>
+                  <Link>Delivery</Link>
+                  <Link>Order and Pick Up Options</Link>
+                  <Link>Explore and Find Coffee for Home</Link>
                 </AccordionDetails>
               </Accordion>
             </div>
             <div className="none-card">
               <div className="footer-card">
                 <h1>About Us</h1>
-                <a href="#">Our Company</a>
-                <a href="#">Our Coffee</a>
-                <a href="#">Stories and News</a>
-                <a href="#">Starbucks Archive</a>
-                <a href="#">Investor Relations</a>
-                <a href="#">Customer Service</a>
-                <a href="#">Contact Us</a>
+                <Link to="/about-us/">Our Company</Link>
+                <Link>Our Coffee</Link>
+                <Link>Stories and News</Link>
+                <Link>Starbucks Archive</Link>
+                <Link>Investor Relations</Link>
+                <Link>Customer Service</Link>
+                <Link>Contact Us</Link>
               </div>
               <div className="footer-card">
                 <h1>Careers</h1>
-                <a href="#">Culture and Values</a>
-                <a href="#">Inclusion, Diversity, and Equity</a>
-                <a href="#">College Achievement Plan </a>
-                <a href="#">Alumni Community</a>
-                <a href="#">U.S Careers</a>
-                <a href="#">International Careers</a>
+                <Link>Culture and Values</Link>
+                <Link>Inclusion, Diversity, and Equity</Link>
+                <Link>College Achievement Plan </Link>
+                <Link>Alumni Community</Link>
+                <Link>U.S Careers</Link>
+                <Link>International Careers</Link>
               </div>
               <div className="footer-card">
                 <h1>Social Impact</h1>
-                <a href="#">People</a>
-                <a href="#">Planet</a>
-                <a href="#">Environmental and Social Impact Reporting</a>
+                <Link>People</Link>
+                <Link>Planet</Link>
+                <Link>Environmental and Social Impact Reporting</Link>
               </div>
               <div className="footer-card">
                 <h1>For Business Partners</h1>
-                <a href="#">Landlord Support Center</a>
-                <a href="#">Suppliers</a>
-                <a href="#">Corporate Gift Card Sales</a>
-                <a href="#">Office and Foodservice Coffee</a>
+                <Link>Landlord Support Center</Link>
+                <Link>Suppliers</Link>
+                <Link>Corporate Gift Card Sales</Link>
+                <Link>Office and Foodservice Coffee</Link>
               </div>
               <div className="footer-card">
                 <h1>Order and Pick Up</h1>
-                <a href="#">Order on the App</a>
-                <a href="#">Order on the Web</a>
-                <a href="#">Delivery</a>
-                <a href="#">Order and Pick Up Options</a>
-                <a href="#">Explore and Find Coffee for Home</a>
+                <Link>Order on the App</Link>
+                <Link>Order on the Web</Link>
+                <Link>Delivery</Link>
+                <Link>Order and Pick Up Options</Link>
+                <Link>Explore and Find Coffee for Home</Link>
               </div>
             </div>
           </div>
@@ -167,25 +169,25 @@ const Footer = () => {
           <div className="footer-bottom">
             <ul>
               <li>
-                <a href="" className="border-none">
+                <Link  className="border-none">
                   {" "}
                   Privacy Notice
-                </a>
+                </Link>
               </li>
               <li>
-                <a href=""> Terms of Use</a>
+                <Link > Terms of Use</Link>
               </li>
               <li>
-                <a href=""> Do Not Share My Personal Information</a>
+                <Link > Do Not Share My Personal Information</Link>
               </li>
               <li>
-                <a href=""> CA Supply Chain Act</a>
+                <Link > CA Supply Chain Act</Link>
               </li>
               <li>
-                <a href=""> Accessibility</a>
+                <Link > Accessibility</Link>
               </li>
               <li>
-                <a href=""> Cookie Preferences</a>
+                <Link > Cookie Preferences</Link>
               </li>
             </ul>
             <p>© 2024 Starbucks Coffee Company. All rights reserved.</p>
