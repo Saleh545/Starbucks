@@ -24,6 +24,19 @@ body {
     margin: 40px 0 0 131px !important;
 }
 
+.cards {
+    display: flex !important;
+}
+
+.slick-slide {
+    transition: transform .3s ease;
+}
+.slick-initialized .slick-slide:hover{
+    
+    transform: translateY(-8px);
+}
+
+
 .carousel h2 {
     text-transform: uppercase;
     font-size: 14px;
@@ -36,7 +49,6 @@ body {
     width: 295px !important;
     height: 186px !important;
     display: block !important;
-    transition: transform .3s ease;
 }
 
 .box img {
@@ -48,9 +60,7 @@ body {
     width: 323px !important;
 }
 
-.box:hover {
-    transform: translateY(-8px);
-}
+
 
 .slick-next {
     right: 63px !important;

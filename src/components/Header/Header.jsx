@@ -64,7 +64,7 @@ const Header = () => {
                 </div>
                 <div className="account">
                   <button className="sign"> <Link to="/account/signin" >Sign in</Link></button>
-                  <button className="join">Join now</button>
+                  <button className="join"><Link to="/account/create">Join now</Link></button>
                 </div>
               </div>
             </nav>

@@ -9,12 +9,10 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
 
-
-
 const Coffee = () => {
   const [coffee, setCoffee] = useState([]);
   const { id } = useParams();
-              const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     axios.get(`http://localhost:3000/coffee?id=${id}`).then((res) => {
@@ -113,14 +111,17 @@ const Coffee = () => {
                     </fieldset>
                     <fieldset>
                       <legend>Add-ins</legend>
-                     <div className="ins-flex">
-                      <p>Strawberries scoops</p>
-                      <div className="counter">
-
-                      <i onClick={() => setCount(Math.max(count - 1, 0))}><CiCircleMinus /></i>
-                    <span>{count}</span>
-                  <i onClick={() => setCount(count + 1)}><CiCirclePlus /></i>
-                      </div>
+                      <div className="ins-flex">
+                        <p>Strawberries scoops</p>
+                        <div className="counter">
+                          <i onClick={() => setCount(Math.max(count - 1, 0))}>
+                            <CiCircleMinus />
+                          </i>
+                          <span>{count}</span>
+                          <i onClick={() => setCount(count + 1)}>
+                            <CiCirclePlus />
+                          </i>
+                        </div>
                       </div>
                     </fieldset>
                   </Form>

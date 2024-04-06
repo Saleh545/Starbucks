@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import Header from "../components/Header/Header";
 import Footer from "../components/footer/Footer";
 import Slider from "react-slick";
@@ -8,6 +9,18 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Gift = () => {
+  
+  
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios.get("http://localhost:3000/giftcard").then((res) => {
+      setData(res.data);
+      console.log(res.data)
+    });
+    
+  }, []);  
+  const featuredCategory = data.find((category) => category.category === "Featured");
+  
   let settings = {
     infinite: false,
     speed: 400,
@@ -44,62 +57,26 @@ const Gift = () => {
     <div>
       <Header />
       <div className="carousel">
-        <h2>featured</h2>
+  {featuredCategory && (
+    <div>
+      <h2>{featuredCategory.category}</h2>
+      <Link to="/Gift" className="see-all">{featuredCategory.see}</Link>
+    </div>
+  )}
 
-        <Slider {...settings}>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/SpringTulipsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-
-          <div className="box">
-            <Link to="/Gift">
-              <img
-                src="https://globalassets.starbucks.com/digitalassets/cards/fy24/HappyEasterEggsFY24.png"
-                alt=""
-              />
-            </Link>
-          </div>
-        </Slider>
+  <Slider {...settings}>
+    {featuredCategory && featuredCategory.cards.map((card) => (
+      <div key={card.id} className="box">
+        <Link to="/Gift">
+          <img src={card.img} alt="" />
+        </Link>
       </div>
+    ))}
+  </Slider>
+</div>
+
+
+
       <div className="effor">
         <div className="container">
           <div className="effor-text">

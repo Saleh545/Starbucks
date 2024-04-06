@@ -1,0 +1,133 @@
+.join-center-h1 {
+    display: flex;
+    justify-content: center;
+    padding: 48px 40px !important;
+}
+
+.join-center-h1 h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000de;
+}
+
+.join-box {
+    width: 40.5%;
+    box-shadow: 0 2px 4px #00000012, 0 4px 5px #0000000f, 0 1px 10px #0000001a;
+    border-radius: 12px;
+    padding: 56px 97px !important;
+}
+
+.join-box p {
+    margin-bottom: 16px !important;
+    font-size: 16px;
+    color: #000000de;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+.join-center-h1 {
+    flex-direction: column;
+    align-items: center;
+}
+
+.join-center-h1 h5 {
+    font-size: 14px;
+    padding: 48px 0 16px 0 !important;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #00000094;
+}
+
+.join-center-h1 p {
+    padding: 0 8px 0 0 !important;
+    font-size: 14px;
+    width: 35%;
+    color: #00000094;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.join-center-h1 p a {
+    text-decoration: underline !important;
+    color: #00000094;
+}
+
+.join-center-h1 p a:hover {
+    text-decoration: none !important;
+}
+
+form h3 {
+    color: #000000de;
+    margin-top: 30px !important;
+    font-size: 19px;
+}
+
+form h4 {
+    color: #000000de;
+    margin: 50px 0 20px 0 !important;
+    font-size: 19px;
+}
+
+.input-btm {
+    color: #000000de;
+    padding: 8px 0 0 16px !important;
+    letter-spacing: 1px;
+}
+
+.eye-icon-join {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%)
+}
+
+.join-bottom a {
+    font-size: 16px;
+    color: #006241;
+    font-weight: 700;
+    text-decoration: underline !important;
+    margin-top: 40px !important;
+}
+.join-bottom a:hover{
+    text-decoration: none !important;
+}
+.join-bottom h2{
+    font-size: 14px ;
+    color: #00000094;
+    margin: 40px 0 24px 0 !important;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.join-bottom p{
+    font-size: 16px ;
+    color: #000000de;
+    margin-bottom: 26px !important;
+}
+.sign-check .yes{
+    color: black;
+}
+ .know{
+    color: #00000094 !important ;
+    margin-left: 33px !important;
+}
+
+.sign-check #myCheck {
+    accent-color: #00754A;
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+}
+form h6{
+    font-size: 14px;
+    color: #00000094;
+    margin-top: 40px !important;
+    letter-spacing: 1px;
+}
+.join-bottom span{
+    font-size: 16px;
+    color: #000000de;
+    
+}

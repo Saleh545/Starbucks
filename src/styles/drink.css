@@ -23,15 +23,17 @@ body {
     margin-left: 40px !important;
     width: 62.5%;
 }
-.drinks-filter-right .breadcrumb{
+
+.drinks-filter-right .breadcrumb {
     display: inline-flex;
     height: auto;
     gap: 4px;
     margin-top: 10px !important;
     margin-bottom: 33px !important;
 }
-.breadcrumb span{
-    font-size: 16px ;
+
+.breadcrumb span {
+    font-size: 16px;
     font-weight: 600;
     color: #00000094;
 }
@@ -51,18 +53,20 @@ body {
 }
 
 .drinks-grid-filter {
-    display: flex;
-    flex-wrap: wrap !important;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     row-gap: 32px;
     margin: 32px 0 60px 0 !important;
 }
 
 .drinks-item-filter {
-    width: 50%;
+    padding: 15px 20px !important;
+
 }
 
 .drinks-item-filter a {
     display: flex !important;
+    flex-direction: column;
     column-gap: 16px;
     align-items: center;
 }
@@ -70,12 +74,71 @@ body {
 .drinks-item-filter h3 {
     text-transform: capitalize;
     color: #000000de;
+    text-align: center;
+    margin-top: 15px !important;
+    line-height: 1.5;
+    font-size: 19px;
+    color: #000000de;
+    font-weight: 400;
 }
 
-.drinks-item-filter  .imgg img {
-    height: 112px;
-    width: 112px;
-    border-radius: 50%;
+.drinks-item-filter .imgg {
+    height: 148px;
+    width: 148px;
     object-fit: cover !important;
+}
 
+.drinks-item-filter .imgg img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px !important
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 750px !important
+    }
+
+    .drinks-grid-filter {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .drinks-filter-right {
+        width: 100%;
+    }
+    .drinks-filter h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px !important
+    }
+
+    .product-menu {
+        padding-right: 20px !important;
+    }
+
+    .drinks-item-filter .imgg {
+        width: 133px;
+        height: 133px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1180px !important
+    }
+}
+
+@media (max-width: 1700px) {
+    .container {
+        max-width: 1660px
+    }
 }

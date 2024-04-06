@@ -61,7 +61,10 @@
     font-weight: 400;
     letter-spacing: 0.6px;
 }
+form .inputs{
+    margin-top: 30px !important;
 
+}
 form .inputs input {
     width: 100%;
     padding: 18px 16px 16px 16px !important;
@@ -71,7 +74,6 @@ form .inputs input {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px !important;
 }
 
 .inputs input::placeholder {
@@ -115,8 +117,8 @@ form .inputs input {
 
 .sign-check #myCheckbox {
     accent-color: #00754A;
-    width: 24px;
-    height: 24px;
+    width: 24px !important;
+    height: 24px !important;
     border-radius: 50% !important;
     cursor: pointer;
 }
@@ -179,7 +181,8 @@ form .inputs input {
     margin: 0 auto !important;
     text-align: center;
 }
-.sign-text-center p{
+
+.sign-text-center p {
     font-size: 16px;
     color: #000000de;
     line-height: 1.5;
@@ -188,7 +191,8 @@ form .inputs input {
     font-weight: 500;
     margin-bottom: 16px !important;
 }
-.sign-text-center  button{
+
+.sign-text-center button {
     border-radius: 50px;
     padding: 7px 16px !important;
     border: 1px solid #00754A;
@@ -199,36 +203,43 @@ form .inputs input {
     font-size: 16px;
     cursor: pointer;
 }
-.sign-text-center  button:hover{
+
+.sign-text-center button:hover {
     background-color: #E5F1EC;
 }
 
 @media (max-width: 576px) {
     .container {
-        max-width:540px !important
+        max-width: 540px !important
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        max-width:750px !important
+        max-width: 750px !important
     }
+
     .sign-box {
-    width: 100%;
+        width: 100%;
     }
-    .sign-center-h1 h1{
+
+    .sign-center-h1 h1 {
         font-size: 24px;
     }
+
     .inputs input::placeholder {
         font-size: 12px;
-    
+
     }
-    .sign-box p{
+
+    .sign-box p {
         font-size: 14px;
     }
-    .sign-center-box{
+
+    .sign-center-box {
         margin: 0 !important;
     }
+
     .sign-center-size {
         width: 100% !important;
     }
@@ -236,23 +247,26 @@ form .inputs input {
 
 @media (max-width: 992px) {
     .container {
-        max-width:960px !important
+        max-width: 960px !important
     }
+
     .sign-center-size {
         width: 62%;
     }
-    .sign-box{
+
+    .sign-box {
         width: 100%;
     }
 }
 
 @media (max-width: 1200px) {
     .container {
-        max-width:1180px !important
+        max-width: 1180px !important
     }
 }
 
 @media (max-width: 1700px) {
     .container {
-        max-width:1660px 
-    }}
+        max-width: 1660px
+    }
+}
