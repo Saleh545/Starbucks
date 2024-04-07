@@ -12,6 +12,8 @@ import Coffee from "../../Pages/Coffee";
 import Sign from "../../Pages/Sign";
 import Join from "../../Pages/Join";
 import Company from "../../Pages/Company";
+import Ourcoffee from "../../Pages/Ourcoffee";
+import Giftpage from "../../Pages/Giftpage";
 
 const AppRoutes = () => {
   return (
@@ -21,11 +23,13 @@ const AppRoutes = () => {
       <Route path="/Rewards" element={<Rewards />} />
       <Route path="/Menu/drinks/:id" element={<Drinks />} />
       <Route path="/Gift" element={<Gift />} />
+      <Route path="/Gift/:id" element={<Giftpage/>} />
       <Route path="/store-locator" element={<Find />} />
       <Route path="/Menu/product/:id" element={<Coffee/>}/>
       <Route path="/account/signin" element={<Sign/>} />
       <Route path="/account/create" element={<Join/>} />
       <Route path="/about-us/" element={<Company/>} />
+      <Route path="/coffee/" element={<Ourcoffee/>} />
     </Routes>
   );
 };

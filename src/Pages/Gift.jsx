@@ -8,9 +8,7 @@ import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Gift = () => {
-  
-  
+const Gift = () => {  
   const [data, setData] = useState([]);
   useEffect(() => {
     axios.get("http://localhost:3000/giftcard").then((res) => {
@@ -66,14 +64,14 @@ const Gift = () => {
   {featuredCategory && (
     <div>
       <h2>{featuredCategory.category}</h2>
-      <Link to="/Gift" className="see-all">{featuredCategory.see}</Link>
+      <Link className="see-all">{featuredCategory.see}</Link>
     </div>
   )}
 
   <Slider {...settings}>
     {featuredCategory && featuredCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to="/Gift">
+        <Link to={`/Gift/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
@@ -116,14 +114,14 @@ const Gift = () => {
   {easterCategory && (
     <div>
       <h2>{easterCategory.category}</h2>
-      <Link to="/Gift" className="see-all">{easterCategory.see}</Link>
+      <Link  className="see-all">{easterCategory.see}</Link>
     </div>
   )}
 
   <Slider {...settings}>
     {easterCategory && easterCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to="/Gift">
+        <Link to={`/Gift/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
@@ -134,14 +132,14 @@ const Gift = () => {
   {siblingCategory && (
     <div>
       <h2>{siblingCategory.category}</h2>
-      <Link to="/Gift" className="see-all">{siblingCategory.see}</Link>
+      <Link  className="see-all">{siblingCategory.see}</Link>
     </div>
   )}
 
   <Slider {...settings}>
     {siblingCategory && siblingCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to="/Gift">
+        <Link to={`/Gift/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
@@ -152,14 +150,14 @@ const Gift = () => {
   {petCategory && (
     <div>
       <h2>{petCategory.category}</h2>
-      <Link to="/Gift" className="see-all">{petCategory.see}</Link>
+      <Link  className="see-all">{petCategory.see}</Link>
     </div>
   )}
 
   <Slider {...settings}>
     {petCategory && petCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to="/Gift">
+        <Link to={`/Gift/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
@@ -170,14 +168,14 @@ const Gift = () => {
   {springCategory && (
     <div>
       <h2>{springCategory.category}</h2>
-      <Link to="/Gift" className="see-all">{springCategory.see}</Link>
+      <Link className="see-all">{springCategory.see}</Link>
     </div>
   )}
 
   <Slider {...settings}>
     {springCategory && springCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to="/Gift">
+        <Link to={`/Gift/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
@@ -188,14 +186,14 @@ const Gift = () => {
   {appreciationCategory && (
     <div>
       <h2>{appreciationCategory.category}</h2>
-      <Link to="/Gift" className="see-all">{appreciationCategory.see}</Link>
+      <Link  className="see-all">{appreciationCategory.see}</Link>
     </div>
   )}
 
   <Slider {...settings}>
     {appreciationCategory && appreciationCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to="/Gift">
+        <Link to={`/Gift/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
@@ -206,14 +204,14 @@ const Gift = () => {
   {adminCategory && (
     <div>
       <h2>{adminCategory.category}</h2>
-      <Link to="/Gift" className="see-all">{adminCategory.see}</Link>
+      <Link  className="see-all">{adminCategory.see}</Link>
     </div>
   )}
 
   <Slider {...settings}>
     {adminCategory && adminCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to="/Gift">
+        <Link to={`/Gift/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>

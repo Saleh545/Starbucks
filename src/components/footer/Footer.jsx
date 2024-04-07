@@ -28,8 +28,8 @@ const Footer = () => {
                   <h1>About Us</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Link>Our Company</Link>
-                  <Link>Our Coffee</Link>
+                <Link to="/about-us/">Our Company</Link>
+                <Link to="/coffee/">Our Coffee</Link>
                   <Link>Stories and News</Link>
                   <Link>Starbucks Archive</Link>
                   <Link>Investor Relations</Link>
@@ -104,7 +104,7 @@ const Footer = () => {
               <div className="footer-card">
                 <h1>About Us</h1>
                 <Link to="/about-us/">Our Company</Link>
-                <Link>Our Coffee</Link>
+                <Link to="/coffee/">Our Coffee</Link>
                 <Link>Stories and News</Link>
                 <Link>Starbucks Archive</Link>
                 <Link>Investor Relations</Link>

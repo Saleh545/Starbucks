@@ -17,7 +17,7 @@ const Coffee = () => {
   useEffect(() => {
     axios.get(`http://localhost:3000/coffee?id=${id}`).then((res) => {
       setCoffee(res.data);
-      // console.log(res.data);
+      console.log(res.data);
     });
   }, [id]);
   return (

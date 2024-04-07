@@ -112,6 +112,7 @@ nav ul li .active {
 
 .right .location button .active {
     border-bottom: 6px solid #00754A;
+    padding-bottom: 38px !important;
 }
 
 .right .loc:hover {
