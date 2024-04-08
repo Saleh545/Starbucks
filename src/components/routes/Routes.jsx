@@ -14,6 +14,9 @@ import Join from "../../Pages/Join";
 import Company from "../../Pages/Company";
 import Ourcoffee from "../../Pages/Ourcoffee";
 import Giftpage from "../../Pages/Giftpage";
+import Customer from "../../Pages/Customer";
+import People from "../../Pages/People";
+import Planet from "../../Pages/Planet";
 
 const AppRoutes = () => {
   return (
@@ -30,6 +33,9 @@ const AppRoutes = () => {
       <Route path="/account/create" element={<Join/>} />
       <Route path="/about-us/" element={<Company/>} />
       <Route path="/coffee/" element={<Ourcoffee/>} />
+      <Route path="/sbux" element={<Customer/>} /> 
+      <Route path="/responsibility/people/" element={<People/>} />
+      <Route path="/responsibility/planet/" element={<Planet/>} />
     </Routes>
   );
 };

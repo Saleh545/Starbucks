@@ -1,0 +1,286 @@
+.customer {
+    background-image: url("https://customerservice.starbucks.com/sbux_portal_bg_image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 30px 0 40px 10px !important;
+    position: relative;
+}
+
+.customer h1 {
+    font-size: 24px;
+    color: #fff;
+    padding: 0 0 20px 10px !important;
+}
+
+.customer form {
+    display: flex;
+    align-items: center;
+    width: 54.5%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px !important;
+}
+
+.customer form input {
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+}
+
+.customer form input::placeholder {
+    color: #CCCCCC;
+}
+
+.customer form svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px !important;
+}
+
+.sug {
+    padding: 14px 0 0 10px !important;
+    display: flex;
+    column-gap: 6px;
+    align-items: center;
+}
+
+.sug span {
+    color: #888D8E;
+    font-size: 14px;
+    margin-right: 10px !important;
+}
+
+.sug button {
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding: 5px 11px !important;
+    background-color: #00754A;
+    border-radius: 15px !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cus-slider {
+    width: 504px;
+    height: 229px;
+    background-color: #00754A;
+    position: absolute;
+    right: 54px;
+    top: 0;
+    padding: 0 0 20px 0 !important;
+}
+
+.cus-slider .slick-prev {
+    left: 210px !important;
+}
+
+.cus-slider .slick-next {
+    right: 210px !important;
+}
+
+.cus-slider .slick-arrow {
+    top: 100%;
+    z-index: 999 !important;
+    background: none !important;
+}
+
+.cus-slider .slick-arrow:before {
+    background-color: transparent;
+    color: #fff;
+}
+
+.cus-slider .slick-dots {
+    bottom: -10px;
+}
+
+.cus-slider .slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.slider-text {
+
+    text-align: center;
+    padding: 25px 30px !important;
+}
+
+.cus-slider .slick-slide {
+    width: 50% !important;
+}
+
+.slider-text h3 {
+    font-size: 20px;
+    padding-bottom: 8px !important;
+    color: #fff;
+}
+
+.slider-text p {
+    color: #BFDCD2;
+    padding-bottom: 14px !important;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+.slider-text button {
+    font-size: 14px;
+    padding: 7px 16px !important;
+    outline: none;
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slider-text button:hover {
+    background-color: #268A65;
+}
+
+
+.cus-card {
+    margin-top: 48px !important;
+}
+
+.cus-card h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000DE;
+    margin-bottom: 15px !important;
+    display: flex;
+    align-items: center;
+}
+
+.cus-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 63%;
+    height: 50%;
+}
+
+.cus-img {
+    width: 93%;
+    height: 89%;
+    box-shadow: 8px 3px 8px rgba(0, 0, 0, .16), 3px 3px 8px rgba(0, 0, 0, .23);
+    border-radius: 19px;
+    transition: transform 0.3s ease;
+}
+
+.cus-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.cus-img:hover {
+    transform: scale(1.05);
+}
+
+.flex-cus {
+    display: flex;
+}
+
+.cus-rewards {
+    padding: 32px 56px !important;
+    background-color: #F1F8F5;
+    border-radius: 10px;
+    text-align: center;
+    width: 33%;
+    height: 50%;
+    margin-left: 27px !important;
+    margin-top: -32px !important;
+}
+
+.cus-rewards h5 {
+    font-size: 14px;
+    color: #00754A;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 8px !important;
+}
+
+.cus-rewards p {
+    font-size: 14px;
+    color: #000000DE;
+    margin-bottom: 16px !important;
+    text-align: center;
+    width: 96%;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.cus-rewards button {
+    border-radius: 50px;
+    padding: 7px 16px !important;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    border: 1px solid #00754A;
+    background: none;
+    color: #00754A;
+    cursor: pointer;
+}
+
+.cus-rewards button:hover {
+    background-color: #D4E9E2;
+}
+
+.cus-bottom {
+    background-color: #F1F8F5;
+    margin-top: 130px !important;
+    margin-bottom: 41px !important;
+}
+.cus-b-flex{
+    display: flex;
+}
+.cb-text h4{
+color: #006241;
+font-size: 24px;
+font-weight: 400;
+margin-bottom: 6px !important;
+}
+.cb-text{
+    padding: 25px 30px 30px !important;
+}
+.cb-text p{
+    font-size: 18px;
+    color: #78AD9B;
+    padding-bottom: 6px !important;
+}
+.cb-btn{
+    margin: 10px 0 30px !important;
+    display: flex;
+    column-gap: 10px;
+}
+.cb-btn button{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px !important;
+    padding: 10px 16px !important;
+    border-radius: 100px;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.cb-btn button:hover{
+    background-color: #E3E9E7;
+}
+.cb-text h6{
+    display: flex !important;
+    font-size: 14px;
+    color: #1E3932;
+}
+.cb-text h6 p{
+    margin-left: 18px !important;
+    font-size: 14px !important;
+}
+.cb-img{
+    width: 32%;
+    height: 290px;
+}
+.cb-img img{
+    width: 100%;
+    height: 100%;
+ }

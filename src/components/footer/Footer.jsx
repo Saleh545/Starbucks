@@ -33,7 +33,7 @@ const Footer = () => {
                   <Link>Stories and News</Link>
                   <Link>Starbucks Archive</Link>
                   <Link>Investor Relations</Link>
-                  <Link>Customer Service</Link>
+                  <Link to="/sbux">Customer Service</Link>
                   <Link>Contact Us</Link>
                 </AccordionDetails>
               </Accordion>
@@ -62,8 +62,8 @@ const Footer = () => {
                   <h1>Social Impact</h1>
                 </AccordionSummary>
                 <AccordionDetails>
-                  <Link>People</Link>
-                  <Link>Planet</Link>
+                  <Link to="/responsibility/people/">People</Link>
+                  <Link to="/responsibility/planet/"  >Planet</Link>
                   <Link>Environmental and Social Impact Reporting</Link>
                 </AccordionDetails>
               </Accordion>
@@ -108,7 +108,7 @@ const Footer = () => {
                 <Link>Stories and News</Link>
                 <Link>Starbucks Archive</Link>
                 <Link>Investor Relations</Link>
-                <Link>Customer Service</Link>
+                <Link to="/sbux">Customer Service</Link>
                 <Link>Contact Us</Link>
               </div>
               <div className="footer-card">
@@ -122,8 +122,8 @@ const Footer = () => {
               </div>
               <div className="footer-card">
                 <h1>Social Impact</h1>
-                <Link>People</Link>
-                <Link>Planet</Link>
+                <Link to="/responsibility/people/">People</Link>
+                <Link to="/responsibility/planet/"  >Planet</Link>
                 <Link>Environmental and Social Impact Reporting</Link>
               </div>
               <div className="footer-card">

@@ -1,0 +1,102 @@
+.p-text-center {
+    padding: 32px 0 !important;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.p-text-center h2 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    line-height: 1.2;
+    color: #1E3932;
+    margin-bottom: 24px !important;
+    text-align: center;
+}
+
+.p-text-center p {
+    line-height: 1.75;
+    font-size: 19px;
+    text-align: center !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+    width: 54%;
+}
+.card .right2{
+    background-color: #D4E9E2 !important;
+    justify-content: flex-start;
+}
+.right2 .text2{
+    text-align: left;
+    padding: 0 0 0 48px !important;
+    width: 73%;
+}
+.text2 h1{
+    color: #1E3932;
+}
+.text2 p{
+    text-align: left;
+    color: #1E3932;
+}
+.text2 button:hover{
+    background-color: #C1D7D0;
+}
+.p-text-center button{
+    padding: 7px 16px !important;
+    border: 1px solid black;
+    outline: none;
+    background: none;
+    border-radius: 50px;
+    font-size: 16px;
+    margin-top: 32px !important;
+    cursor: pointer;
+}
+.p-text-center button:hover{
+    background-color: #E8EBEA;
+}
+
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width:540px !important
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width:750px !important
+    }
+    .p-text-center p{
+        font-size: 16px;
+        width: 100%;
+    }
+    .p-text-center h2{
+        text-align: center;
+    }
+    .p-text-center {
+padding-left: 20px !important;
+padding-right: 20px !important;    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width:960px !important
+    }
+    .p-text-center h2{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width:1180px  !important
+    }
+}
+
+@media (max-width: 1700px) {
+    .container {
+        max-width:1660px
+    }}
