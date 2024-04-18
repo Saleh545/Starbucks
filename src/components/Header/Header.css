@@ -13,7 +13,6 @@
 .container {
     max-width: 1440px;
     margin: 0 auto !important;
-    overflow: hidden;
 }
 
 .parent {
@@ -222,7 +221,9 @@ nav ul li .active {
         width: 24px !important;
         height: 24px !important;
     }
-
+    .right .account button{
+        padding: 7px 16px !important;
+    }
     nav {
         height: 100vh;
         background-color: rgb(255, 255, 255);
@@ -373,13 +374,11 @@ nav ul li .active {
 
     .navTransformClose {
         transform: translate(100%);
-        z-index: 999;
-    }
+        z-index: 111;    }
 
     .navTransformOpen {
         transform: translate(30%);
-        z-index: 999;
-    }
+        z-index: 111;    }
 
 }
 

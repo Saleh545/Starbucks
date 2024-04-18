@@ -9,6 +9,9 @@ a {
     list-style: none !important;
     font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+body{
+    overflow-x: hidden !important ;
+}
 
 .container {
     max-width: 1440px !important;
@@ -140,6 +143,7 @@ a {
     position: fixed;
     bottom: 0 !important;
     width: 100%;
+    z-index: 999;
 }
 .pickup{
     margin-left: 116px !important;

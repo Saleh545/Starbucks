@@ -13,9 +13,7 @@
 .container {
     max-width: 1440px;
     margin: 0 auto !important;
-    overflow: hidden;
 }
-
 
 .rewards-header {
     background-color: #1E3932;
@@ -528,7 +526,7 @@
     .container {
         max-width: 750px !important
     }
-
+   
     .rewards-header .join-in {
         display: block;
     }
