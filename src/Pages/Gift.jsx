@@ -71,7 +71,7 @@ const Gift = () => {
   <Slider {...settings}>
     {featuredCategory && featuredCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to={`/Gift/${card.id}`}>
+        <Link to={`/Gift/${featuredCategory.category}/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>

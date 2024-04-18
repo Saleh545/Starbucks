@@ -4,28 +4,23 @@ import React, { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/footer/Footer";
 const Giftpage = () => {
+  const [giftCategory, setGiftCategory] = useState([]);
   const [gift, setGift] = useState([]);
-  const { id } = useParams();
+  const { id,category } = useParams();
+  console.log(id);
+  console.log(category);
   useEffect(() => {
-    axios.get(`http://localhost:3000/giftcard/?${id}`).then((res) => {
-      setGift(res.data);
-    //   console.log(res.data);
+    axios.get(`http://localhost:3000/giftcard?category=${category}`).then((res) => {
+      setGiftCategory(res.data);
+      console.log(res.data);
+      setGift(res.data[0]?.cards?.find(item=>item.id===id))
     });
   }, [id]);
   return (
     <div>
       <Header />
-      {gift.map((item) => (
-          <div key={item.id}>
-            {/* {console.log(item)} */}
-          {item.cards.map((data) => (
-            <div key={data.id}>
-              <img src={data.img} alt="" />
-              {/* {console.log(data.img)} */}
-            </div>
-          ))}
-        </div>
-      ))}
+      <img src={gift.img} style={{width:"300px"}} alt="" />
+      
       <Footer />
     </div>
   );

@@ -203,7 +203,7 @@
 }
 
 footer {
-    box-shadow: 0 -3px 0px rgba(0, 0, 0, .1); /* Sadece yukarıdan gölge */
+    box-shadow: 0 -3px 0px rgba(0, 0, 0, .1); 
 }
 
 .cards {

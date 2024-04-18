@@ -132,6 +132,42 @@ a {
 
 }
 
+.basket {
+    background-color: #1E3932;
+    padding: 32px 0 24px 0 !important;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0 !important;
+    width: 100%;
+}
+.pickup{
+    margin-left: 116px !important;
+}
+
+.pickup span {
+    color: #BCC4C2;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    letter-spacing: .6px;
+}
+
+.pickup h3 {
+    font-size: 16px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #627570;
+    padding-bottom: 5px !important;
+    cursor: pointer;
+}
+
+.pickup h3 i {
+    padding-left: 77px !important;
+}
+
 
 
 @media (max-width: 576px) {
@@ -164,12 +200,13 @@ a {
     .drinks-item {
         width: 100%;
     }
-    .drinks-item .imgg img{
+
+    .drinks-item .imgg img {
         width: 72px;
         height: 72px;
     }
 
-  
+
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -204,6 +241,6 @@ a {
 
 @media (max-width: 1700px) {
     .container {
-        max-width: 1660px 
+        max-width: 1660px
     }
 }

@@ -17,6 +17,7 @@ import Giftpage from "../../Pages/Giftpage";
 import Customer from "../../Pages/Customer";
 import People from "../../Pages/People";
 import Planet from "../../Pages/Planet";
+import Cart from "../../Pages/Cart";
 
 const AppRoutes = () => {
   return (
@@ -26,7 +27,7 @@ const AppRoutes = () => {
       <Route path="/Rewards" element={<Rewards />} />
       <Route path="/Menu/drinks/:id" element={<Drinks />} />
       <Route path="/Gift" element={<Gift />} />
-      <Route path="/Gift/:id" element={<Giftpage/>} />
+      <Route path="/Gift/:category/:id" element={<Giftpage/>} />
       <Route path="/store-locator" element={<Find />} />
       <Route path="/Menu/product/:id" element={<Coffee/>}/>
       <Route path="/account/signin" element={<Sign/>} />
@@ -36,6 +37,9 @@ const AppRoutes = () => {
       <Route path="/sbux" element={<Customer/>} /> 
       <Route path="/responsibility/people/" element={<People/>} />
       <Route path="/responsibility/planet/" element={<Planet/>} />
+      <Route path="/menu/cart"  element={<Cart/>}/>
+
+
     </Routes>
   );
 };

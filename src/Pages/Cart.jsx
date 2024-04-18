@@ -1,4 +1,7 @@
 import React from 'react'
+import "../styles/cart.css"
+import { NavLink } from 'react-router-dom'
+
 import {
     FaFacebook,
     FaInstagramSquare,
@@ -11,15 +14,26 @@ import {
   import AccordionSummary from "@mui/material/AccordionSummary";
   import AccordionDetails from "@mui/material/AccordionDetails";
   import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Link } from 'react-router-dom';
+  import { Link } from 'react-router-dom';
 
-const Footer = () => {
+const Cart = () => {
   return (
     <div>
-          <footer>
-        <div className="container">
-          <div className="cards">
-            <div className="accordion">
+        <div className="cart-flex">
+        <div className="cart-left">
+        <div className="img">
+              <NavLink to="/">
+              <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/446px-Starbucks_Corporation_Logo_2011.svg.png?20170312192423" alt=""/>
+
+              </NavLink>
+            </div>    
+
+                </div>
+                <div className="cart-right">
+                    <div className="cart-footer">
+                    <footer>
+          <div className="cards  cart-cards">
+            <div className="accordion cart-block">
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
@@ -100,49 +114,7 @@ const Footer = () => {
                 </AccordionDetails>
               </Accordion>
             </div>
-            
-            <div className="none-card">
-              <div className="footer-card">
-                <h1>About Us</h1>
-                <Link to="/about-us/">Our Company</Link>
-                <Link to="/coffee/">Our Coffee</Link>
-                <Link>Stories and News</Link>
-                <Link>Starbucks Archive</Link>
-                <Link>Investor Relations</Link>
-                <Link to="/sbux">Customer Service</Link>
-                <Link>Contact Us</Link>
-              </div>
-              <div className="footer-card">
-                <h1>Careers</h1>
-                <Link>Culture and Values</Link>
-                <Link>Inclusion, Diversity, and Equity</Link>
-                <Link>College Achievement Plan </Link>
-                <Link>Alumni Community</Link>
-                <Link>U.S Careers</Link>
-                <Link>International Careers</Link>
-              </div>
-              <div className="footer-card">
-                <h1>Social Impact</h1>
-                <Link to="/responsibility/people/">People</Link>
-                <Link to="/responsibility/planet/"  >Planet</Link>
-                <Link>Environmental and Social Impact Reporting</Link>
-              </div>
-              <div className="footer-card">
-                <h1>For Business Partners</h1>
-                <Link>Landlord Support Center</Link>
-                <Link>Suppliers</Link>
-                <Link>Corporate Gift Card Sales</Link>
-                <Link>Office and Foodservice Coffee</Link>
-              </div>
-              <div className="footer-card">
-                <h1>Order and Pick Up</h1>
-                <Link>Order on the App</Link>
-                <Link>Order on the Web</Link>
-                <Link>Delivery</Link>
-                <Link>Order and Pick Up Options</Link>
-                <Link>Explore and Find Coffee for Home</Link>
-              </div>
-            </div>
+          
           </div>
 
           <div className="social">
@@ -167,10 +139,10 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="footer-bottom">
+          <div className="footer-bottom cart-footer-bottom">
             <ul>
               <li>
-                <Link  className="border-none">
+                <Link  className="border-none ">
                   {" "}
                   Privacy Notice
                 </Link>
@@ -193,10 +165,13 @@ const Footer = () => {
             </ul>
             <p>© 2024 Starbucks Coffee Company. All rights reserved.</p>
           </div>
-        </div>
       </footer>
+                    </div>
+                </div>
+
+        </div>
     </div>
   )
 }
 
-export default Footer
+export default Cart
