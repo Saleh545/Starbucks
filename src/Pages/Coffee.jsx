@@ -60,7 +60,6 @@ const Coffee = () => {
               <h5>Size options</h5>
               {coffee.map((item, index) => (
                 <ul key={index}>
-                  <div className="circle"></div>
 
                   {item.sizes.map((size, sizeIndex) => (
                     <li key={sizeIndex}>

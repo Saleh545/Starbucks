@@ -15,6 +15,7 @@ const Find = () => {
       <div className="find">
         <div className="find-left">
           <div className="find-flex">
+
             <div className="input-flex flex-none">
                 <form action="">
                     <input type="search" placeholder="Find a store"/>
@@ -23,7 +24,7 @@ const Find = () => {
                     </div>
                 </form>
                 <Link>Filter</Link>
-            </div>
+            </div>  
           </div>
             <div className="find-text">
                 <h2>Zoomed out too far</h2>

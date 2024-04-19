@@ -64,7 +64,6 @@ const Join = () => {
         </div>
       </div>
 
-      {/* Sign up form section */}
       <div className="sign-center-h1 join-center-h1">
         <h1>Create an account</h1>
         <h5>STARBUCKS® REWARDS</h5>
@@ -75,7 +74,6 @@ const Join = () => {
         </p>
       </div>
 
-      {/* Sign up form */}
       <div className="sign-center-box">
         <div className="join-box">
           <p>* indicates required field</p>
@@ -86,8 +84,9 @@ const Join = () => {
           >
             {({ errors, touched }) => (
               <Form>
-                {/* Personal Information */}
                 <h3>Personal Information</h3>
+
+                
                 <div className="inputs">
                   <Field
                     placeholder="* First name"
@@ -104,6 +103,9 @@ const Join = () => {
                     className="errorr"
                   />
                 </div>
+
+
+
                 <div className="inputs">
                   <Field
                     placeholder="* Last name"
@@ -121,7 +123,6 @@ const Join = () => {
                   />
                 </div>
 
-                {/* Account Security */}
                 <div className="inputs">
                   <h4>Account Security</h4>
                   <Field
@@ -142,7 +143,6 @@ const Join = () => {
                   <p className="input-btm">This will be your username</p>
                 </div>
 
-                {/* Password */}
                 <div className="eye-flex inputs">
                   <Field
                     className={`form-control ${
@@ -170,14 +170,12 @@ const Join = () => {
                   special character like an exclamation point or asterisk.
                 </p>
 
-                {/* Additional Information */}
                 <div className="join-bottom">
                   <Link>Already have a Starbucks gift card?</Link>
                   <h2>COLLECT MORE STARS & EARN REWARDS</h2>
                   <p>Email is a great way to know about offers and what’s new from Starbucks.</p>
                 </div>
 
-                {/* Email Subscription */}
                 <div className="sign-check">
                   <div className="chekbox">
                     <Field
@@ -191,7 +189,6 @@ const Join = () => {
                 <p className="know">Know about initiatives, announcements and product offers.</p>
                 <h6>TERMS OF USE</h6>
 
-                {/* Terms of Use */}
                 <div className="sign-checkk">
                   <div className="chekbox">
                     <Field
@@ -207,7 +204,6 @@ const Join = () => {
                   </div>
                 </div>
 
-                {/* Submit button */}
                 <div className="sign-button">
                   <button type="submit">Create account</button>
                 </div>
@@ -217,7 +213,6 @@ const Join = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

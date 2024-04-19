@@ -1,25 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=SoDoSans&display=swap');
-
-* {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
-
-}
-
-body {
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1440px !important;
-    margin: 0 auto !important;
-    overflow: hidden;
-}
-
 .find-flex {
     margin: 24px 0 0 40px !important;
 }
@@ -119,6 +97,9 @@ body {
 .find .find-right{
     width: 100% !important;
 }
+.flex-block{
+    display: none;
+}
 
 
 @media (max-width: 576px) {
@@ -131,17 +112,14 @@ body {
     .container {
         max-width:750px !important
     }
-}
-
-@media (max-width: 992px) {
-    .container {
-        max-width:960px !important
-    }
-    .flex-none{
-        display: none;
-    }
+   
     .flex-block{
         margin: 10px 20px !important;
+        display: inline-flex;
+        width: 89%;
+    }
+    .flex-none{
+        display: none !important;
     }
     .find{
         flex-direction: column-reverse;
@@ -149,15 +127,75 @@ body {
     .find-right iframe{
         height: 381px !important;
     }
+    .find-bottom a{
+        display: block;
+    }
+   
+    .find-bottom a i{
+        display: inline-block ;
+    }
+    .find-bottom a i svg{
+        width: 12px !important ;
+        height: 12px !important;
+
+    }
+    .find-text h2{
+        font-size: 24px;
+    }
+    .find-text {
+        padding: 24px 16px 24px 25px !important;
+        display: block;
+        margin: 0 !important;
+    }
+    .find .find-left{
+        width: 100%;
+    }
+    .find-text p{
+        font-size: 14px;
+    }
+    .find-bottom {
+        margin-top: 43px !important;
+        padding: 24px 24px 90px 25px  !important;}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width:960px !important
+    }
+  
+    .flex-block{
+        margin: 10px 20px !important;
+        display: inline-flex;
+        width: 94%;
+    }
+    .flex-none{
+        display: none !important;
+    }
+    .find{
+        flex-direction: column-reverse;
+    }
+    .find-right iframe{
+        height: 381px !important;
+    }
+    .find-bottom a{
+        display: block;
+    }
+   
+    .find-bottom a i{
+        display: inline-block ;
+    }
+    .find-bottom a i svg{
+        width: 12px !important ;
+        height: 12px !important;
+
+    }
 }
 
 @media (max-width: 1200px) {
     .container {
         max-width:1180px
     }
-    .flex-block{
-        display: none;
-    }
+  
     
 }
 
@@ -165,7 +203,4 @@ body {
     .container {
         max-width:1660px
     }
-}
-.flex-block{
-    display: none;
 }

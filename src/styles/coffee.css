@@ -147,19 +147,6 @@ body {
     flex-direction: column;
 }
 
-.coffee-left ul .circle {
-    background: #d4e9e2;
-    border: 2px solid #006241;
-    border-radius: 50%;
-    height: 56px;
-    opacity: 1;
-    position: absolute;
-    transition: all .25s ease-in-out;
-    width: 56px;
-    z-index: -1;
-    margin-left: 8px !important;
-
-}
 
 .coffee-right {
     margin-left: 88px !important;

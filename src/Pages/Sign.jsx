@@ -6,12 +6,12 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
 
-const validationSchema = Yup.object().shape({
-  usernameOrEmail: Yup.string().required("Enter an email/username."),
-  password: Yup.string().required("Enter a password."),
-});
 
 const Sign = () => {
+  const validationSchema = Yup.object().shape({
+    usernameOrEmail: Yup.string().required("Enter an email/username."),
+    password: Yup.string().required("Enter a password."),
+  });
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -53,6 +53,7 @@ const Sign = () => {
             validationSchema={validationSchema}
             onSubmit={handleSubmit}>
             {({ errors, touched }) => (
+              
               <Form>
                 <div className="inputs">
                   <Field
