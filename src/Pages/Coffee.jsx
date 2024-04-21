@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { Link, NavLink, useParams } from "react-router-dom";
 import Header from "../components/Header/Header";
@@ -8,11 +8,16 @@ import "../styles/coffee.css";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
+import { IoClose } from "react-icons/io5";
+import BasketBottom from "../components/BasketBottom";
+import DataContext from "../context/DataContext";
 
 const Coffee = () => {
   const [coffee, setCoffee] = useState([]);
   const { id } = useParams();
   const [count, setCount] = useState(0);
+  
+  const { basketData, setBasketData } = useContext(DataContext);
 
   useEffect(() => {
     axios.get(`http://localhost:3000/coffee?id=${id}`).then((res) => {
@@ -20,6 +25,15 @@ const Coffee = () => {
       console.log(res.data);
     });
   }, [id]);
+
+
+
+  const handleBasket = () => {
+    setBasketData([...basketData, coffee[0]]);
+    console.log(basketData);
+  };
+
+
   return (
     <div>
       <Header />
@@ -60,7 +74,6 @@ const Coffee = () => {
               <h5>Size options</h5>
               {coffee.map((item, index) => (
                 <ul key={index}>
-
                   {item.sizes.map((size, sizeIndex) => (
                     <li key={sizeIndex}>
                       <NavLink>
@@ -131,6 +144,12 @@ const Coffee = () => {
         </div>
       </div>
       <Footer />
+
+      <div className="basket">
+        <button onClick={handleBasket}>Add to Order</button>
+      </div>
+
+      <BasketBottom />
     </div>
   );
 };

@@ -6,11 +6,14 @@ import Footer from "../components/footer/Footer";
 import "../styles/giftpage.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import Box from "@mui/material/Box";
+import TextField from "@mui/material/TextField";
+
 
 const Giftpage = () => {
   const validationSchema = Yup.object().shape({
-    recipient: Yup.string().required("Please enter the recipient's name."),
-    recipientEmail: Yup.string().required("Please enter the recipient's email."),
+    recipient: Yup.string().required(" ⊗ Please enter the recipient's name."),
+    recipientEmail: Yup.string().required(" ⊗ Please enter the recipient's email."),
   });
 
   const [giftCategory, setGiftCategory] = useState([]);
@@ -69,46 +72,57 @@ const Giftpage = () => {
                 >
                   {({ errors, touched }) => (
                     <Form>
-                      <div className="inputs">
+                  <div className="gift-inputs">
                         <Field
-                          className={`form-control ${
-                            errors.recipient && touched.recipient ? "error" : ""
-                          }`}
-                          type="text"
+                          as={TextField}
+                          fullWidth
+                          label="* Recipient Name"
                           name="recipient"
                           id="recipient"
-                          placeholder="* Recipient Name"
+                          className={`form-control ${
+                            errors.recipient && touched.recipient
+                              ? "error"
+                              : ""
+                          }`}
+                          type="text"
                         />
                         <ErrorMessage
                           name="recipient"
                           component="div"
-                          className="errorr"
+                          className="errorr" 
+                          label="* Recipient Name"
                         />
                       </div>
 
-
-                      <div className="inputs">
+                      <div className="gift-inputs">
                         <Field
-                          className={`form-control ${
-                            errors.recipientEmail && touched.recipientEmail ? "error" : ""
-                          }`}
-                          type="text"
+                          as={TextField}
+                          fullWidth
+                          label="* Recipient Email"
                           name="recipientEmail"
                           id="recipientEmail"
-                          placeholder="* Recipient Email"
+                          className={`form-control ${
+                            errors.recipientEmail && touched.recipientEmail
+                              ? "error"
+                              : ""
+                          }`}
+                          type="text"
                         />
                         <ErrorMessage
                           name="recipientEmail"
                           component="div"
-                          className="errorr"
+                          className="errorr" 
+                          label="* Recipient Email"
                         />
                       </div>
-
-
-                      
                     </Form>
                   )}
                 </Formik>
+
+                <div className="max-rec">
+                  <h5>Maximum of 10 recipients</h5>
+                  <button>Add another recipient</button>
+                </div>
               </div>
             </div>
           </div>

@@ -172,6 +172,19 @@ body{
     padding-left: 77px !important;
 }
 
+.basket-img{
+    position: relative;
+}
+.basket-img h1{
+    text-align: center !important;
+    position: absolute;
+    top: 7px;
+    right: 11px;
+    font-size: 19px;
+    color: #fff ;
+    z-index: -1;
+
+}
 
 
 @media (max-width: 576px) {

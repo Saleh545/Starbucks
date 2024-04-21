@@ -206,7 +206,22 @@ fieldset .ins-flex {
     height: 24px;
     color: #00754A;
 }
+.basket button{
+    padding: 18px 24px !important;
+    background-color: #00754a;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 600;
+    line-height: 1.2;
+    position: fixed;
 
+    bottom: 20%;
+    right: 3%;
+}
 
 @media (max-width: 576px) {
     .container {

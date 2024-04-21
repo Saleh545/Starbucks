@@ -96,6 +96,9 @@
 .amount{
     margin-bottom: 44px !important;
 }
+.gift-inputs{
+    margin-bottom: 28px !important;
+}
 .giftin h3{
     font-size: 24px;
     color: #000000de;
@@ -105,4 +108,72 @@
     line-height: 1.5;
     border-bottom: 4px solid #d4e9e2;
     padding: 0 8px 12px !important;
+}
+.gift-inputs input{
+    width: 100%;
+    padding: 15px  16px 15px 16px !important;
+    border-radius: 7px;
+    outline: none !important;
+    border: none !important;
+    /* border: 1px solid #999999; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: -1;
+}
+.gift-inputs input:hover{
+
+    border: 4px #cd0e0e !important;
+}
+.gift-inputs .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+    border-radius: 8px;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: #00754A !important; 
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.css-md26zr-MuiInputBase-root-MuiOutlinedInput-root:focus-within .MuiOutlinedInput-notchedOutline {
+    border-color: #C4C4C4 !important;
+}
+
+
+.gift-inputs  .error {
+    border: 2px solid red;
+    border-radius: 8px;
+}
+.gift-inputs .error label{
+color: #d62b1f;
+}
+.gift-inputs label{
+    font-size: 19px;
+    color: #00000094;
+    font-weight: 400;
+    background-color: #fff;
+    top: -4px;
+}
+.max-rec{
+    text-align: center;
+}
+.max-rec h5{
+    font-size: 16px;
+    color: #000000de;
+    margin-bottom: 16px !important;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.max-rec button{
+    padding: 7px 16px !important;
+    color: #fff;
+    background-color: black;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.max-rec button:hover{
+    background-color: #4C4C4C;
 }
