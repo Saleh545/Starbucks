@@ -64,10 +64,8 @@ const Gift = () => {
   {featuredCategory && (
     <div>
       <h2>{featuredCategory.category}</h2>
-      <Link className="see-all">{featuredCategory.see}</Link>
     </div>
   )}
-
   <Slider {...settings}>
     {featuredCategory && featuredCategory.cards.map((card) => (
       <div key={card.id} className="box">
@@ -110,108 +108,119 @@ const Gift = () => {
         <Link className="bottom-link">Card Terms & Conditions</Link>
       </div>
 
-      <div className="carousel">
+<div className="carousel">
   {easterCategory && (
     <div>
       <h2>{easterCategory.category}</h2>
-      <Link  className="see-all">{easterCategory.see}</Link>
     </div>
   )}
-
   <Slider {...settings}>
     {easterCategory && easterCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to={`/Gift/${card.id}`}>
+        <Link to={`/Gift/${easterCategory.category}/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
     ))}
   </Slider>
 </div>
+
+
+
+
 <div className="carousel">
   {siblingCategory && (
     <div>
       <h2>{siblingCategory.category}</h2>
-      <Link  className="see-all">{siblingCategory.see}</Link>
     </div>
   )}
-
   <Slider {...settings}>
     {siblingCategory && siblingCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to={`/Gift/${card.id}`}>
+        <Link to={`/Gift/${siblingCategory.category}/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
     ))}
   </Slider>
 </div>
+
+
 <div className="carousel">
   {petCategory && (
     <div>
       <h2>{petCategory.category}</h2>
-      <Link  className="see-all">{petCategory.see}</Link>
     </div>
   )}
-
   <Slider {...settings}>
     {petCategory && petCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to={`/Gift/${card.id}`}>
+        <Link to={`/Gift/${petCategory.category}/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
     ))}
   </Slider>
 </div>
+
+
+
+
+
+
+
+
 <div className="carousel">
   {springCategory && (
     <div>
       <h2>{springCategory.category}</h2>
-      <Link className="see-all">{springCategory.see}</Link>
     </div>
   )}
-
   <Slider {...settings}>
     {springCategory && springCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to={`/Gift/${card.id}`}>
+        <Link to={`/Gift/${springCategory.category}/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
     ))}
   </Slider>
 </div>
+
+
+
+
+
+
+
 <div className="carousel">
   {appreciationCategory && (
     <div>
       <h2>{appreciationCategory.category}</h2>
-      <Link  className="see-all">{appreciationCategory.see}</Link>
     </div>
   )}
-
   <Slider {...settings}>
     {appreciationCategory && appreciationCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to={`/Gift/${card.id}`}>
+        <Link to={`/Gift/${appreciationCategory.category}/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>
     ))}
   </Slider>
 </div>
+
+
 <div className="carousel">
   {adminCategory && (
     <div>
       <h2>{adminCategory.category}</h2>
-      <Link  className="see-all">{adminCategory.see}</Link>
     </div>
   )}
-
   <Slider {...settings}>
     {adminCategory && adminCategory.cards.map((card) => (
       <div key={card.id} className="box">
-        <Link to={`/Gift/${card.id}`}>
+        <Link to={`/Gift/${adminCategory.category}/${card.id}`}>
           <img src={card.img} alt="" />
         </Link>
       </div>

@@ -99,6 +99,7 @@
 .gift-inputs{
     margin-bottom: 28px !important;
 }
+
 .giftin h3{
     font-size: 24px;
     color: #000000de;
@@ -130,6 +131,10 @@
     border-radius: 8px;
 }
 
+.optional .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root{
+    height: 111px !important;
+
+}
 .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
     color: #00754A !important; 
 }
@@ -177,3 +182,112 @@ color: #d62b1f;
 .max-rec button:hover{
     background-color: #4C4C4C;
 }
+.optional h5{
+    font-size: 16px !important;
+    color: #000c !important;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-top: 16px !important;
+}
+.optional label{
+    color: black;
+}
+.purchasing{
+    background-color: #EDEBE9;
+    padding-bottom: 91px !important;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px !important;
+}
+.purchasing h4{
+    font-size: 16px;
+    text-align: center;
+    color: #00000094;
+    padding: 16px 0 !important;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.purchasing h4 img{
+    width: 32px  !important;
+    height: 22px;
+    padding-right:  8px !important;
+}
+.purchasing a{
+    outline: none;
+    border: 1px solid black;
+    padding: 7px 16px !important;
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    margin-left: 32px !important;
+}
+.purchasing a svg{
+    width: 5.75% !important ;
+    height: 12px !important;
+    margin-left: 5px !important;
+}
+.purchasing a:hover{
+    background-color: #D5D3D1;
+}
+
+
+
+@media (max-width: 576px) {
+    .container {
+        max-width:540px !important
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width:750px !important
+    }
+    .gift-items{
+        margin-top: 40px !important;
+    }
+    .gift-item {
+        width: 91.8%;
+    }
+    .breadcrumb p{
+        font-size: 14px;
+    }
+    .g-text-img h5{
+        font-size: 24px;
+    }
+    .amount h3{
+        font-size: 19px;
+    }
+    .giftin h3{
+        font-size: 19px;
+    }
+    .purchasing a{
+        font-size: 14px;
+    }
+    .purchasing h4{
+        font-size: 14px;
+        padding: 0 16px !important;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width:960px !important
+    }
+    .gift-item { width: 64.8%; }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width:1180px  !important
+    }
+}
+
+@media (max-width: 1700px) {
+    .container {
+        max-width:1660px
+    }}

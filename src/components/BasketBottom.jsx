@@ -10,12 +10,12 @@ const BasketBottom = () => {
       <div className="basket">
         <div className="pickup">
           <span>Pickup store</span>
-          <h3>
+          <Link to="/store-locator">
             Oasis Travel Center{" "}
             <i>
               <IoClose />
             </i>
-          </h3>
+          </Link>
         </div>
         <div className="basket-img">
           <Link to="/menu/cart">

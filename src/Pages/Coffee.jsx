@@ -8,7 +8,12 @@ import "../styles/coffee.css";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
-import { IoClose } from "react-icons/io5";
+import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
+import IconButton from "@mui/material/IconButton";
+import Collapse from "@mui/material/Collapse";
+import Button from "@mui/material/Button";
+import CloseIcon from "@mui/icons-material/Close";
 import BasketBottom from "../components/BasketBottom";
 import DataContext from "../context/DataContext";
 
@@ -16,7 +21,9 @@ const Coffee = () => {
   const [coffee, setCoffee] = useState([]);
   const { id } = useParams();
   const [count, setCount] = useState(0);
-  
+  const [open, setOpen] = React.useState(true);
+  const [addedToBasket, setAddedToBasket] = useState(false);
+
   const { basketData, setBasketData } = useContext(DataContext);
 
   useEffect(() => {
@@ -26,13 +33,14 @@ const Coffee = () => {
     });
   }, [id]);
 
-
-
   const handleBasket = () => {
     setBasketData([...basketData, coffee[0]]);
     console.log(basketData);
+    setAddedToBasket(true); 
+    setTimeout(() => {
+      setAddedToBasket(false);
+    }, 3000);
   };
-
 
   return (
     <div>
@@ -142,6 +150,25 @@ const Coffee = () => {
             </div>
           </div>
         </div>
+
+        {coffee.map((item) => (
+  <div className="b-alert" key={item.id}>
+    <Box sx={{ width: "100%" }}>
+      <Collapse in={addedToBasket}>
+        <Alert
+          action={
+            <IconButton onClick={() => setAddedToBasket(false)}>
+              <CloseIcon fontSize="inherit" />
+            </IconButton>
+          }
+          sx={{ mb: 2 }}
+        >
+          <span>{item.name} added.</span>
+        </Alert>
+      </Collapse>
+    </Box>
+  </div>
+))}
       </div>
       <Footer />
 

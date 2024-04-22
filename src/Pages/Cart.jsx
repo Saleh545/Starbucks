@@ -25,6 +25,13 @@ import { IoChevronDownOutline } from "react-icons/io5";
 
 const Cart = () => {
   const { basketData, setBasketData } = useContext(DataContext);
+
+  const removeItem = (index) => {
+    const newBasketData = [...basketData];
+    newBasketData.splice(index, 1);
+    setBasketData(newBasketData);
+  };
+
   return (
     <div>
       <div className="cart-flex">
@@ -62,7 +69,7 @@ const Cart = () => {
         </div>
         <div className="cart-right">
           <div className="basket-items">
-            {basketData.map((item) => (
+          {basketData.map((item, index) => (
               <div className="cart-coffee-items">
                 <div className="cart-coffee-item">
                   <div className="cart-coffee-img">
@@ -78,7 +85,7 @@ const Cart = () => {
                     <div className="coffee-buttons">
                       <SlPencil />
                       <div className="plus-minus">
-                        <CiCircleMinus />
+                        <CiCircleMinus onClick={() => removeItem(index)} />
                         <CiCirclePlus />
                       </div>
                     </div>

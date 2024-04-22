@@ -8,11 +8,6 @@
     list-style: none;
     font-family: SoDoSans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-
-body {
-    overflow-x: hidden;
-}
-
 .container {
     max-width: 1440px !important;
     margin: 0 auto !important;
@@ -218,9 +213,38 @@ fieldset .ins-flex {
     font-weight: 600;
     line-height: 1.2;
     position: fixed;
-
-    bottom: 20%;
+    bottom: 27%;
     right: 3%;
+}
+
+.coffe-options .css-1ql91c4-MuiPaper-root-MuiAlert-root{
+    background-color: #006241 !important;
+    padding: 24px 40px !important;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0;
+}
+.b-alert{
+    position: fixed;
+    width: 100%;
+    bottom: 99px;
+    left: 0;
+    z-index:1000;
+    display: block;
+}
+.b-alert .css-1pxa9xg-MuiAlert-message{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.css-1ql91c4-MuiPaper-root-MuiAlert-root .MuiAlert-icon{
+    display: none;
+}
+.css-1vooibu-MuiSvgIcon-root{
+    color: #fff;
 }
 
 @media (max-width: 576px) {
@@ -290,8 +314,14 @@ fieldset .ins-flex {
     }
 
     .coffee-right {
-        margin: 0 !important;
+        margin: 20px 0 20px 0 !important;
         width: 100% !important;
+    }
+    .coffe-options {
+        margin: 32px 40px 0 65px !important;
+    }
+    .coffees .breadcrumb {
+        padding: 16px 40px 16px 26px !important;
     }
 
 

@@ -6,19 +6,29 @@ import Footer from "../components/footer/Footer";
 import "../styles/giftpage.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
-
+import { GrShare } from "react-icons/gr";
 
 const Giftpage = () => {
   const validationSchema = Yup.object().shape({
     recipient: Yup.string().required(" ⊗ Please enter the recipient's name."),
     recipientEmail: Yup.string().required(" ⊗ Please enter the recipient's email."),
+    senderName: Yup.string().required("⊗ Please enter the sender's name."),
+    senderEmail: Yup.string().required("⊗ Please enter the sender's email."),
   });
 
   const [giftCategory, setGiftCategory] = useState([]);
   const [gift, setGift] = useState([]);
   const { id, category } = useParams();
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [textValue, setTextValue] = useState("");
+
+  const handleChange = (event) => {
+    setTextValue(event.target.value);
+  };
+  const toggleSize = () => {
+    setIsExpanded((prevState) => !prevState);
+  };
   useEffect(() => {
     axios
       .get(`http://localhost:3000/giftcard?category=${category}`)
@@ -72,7 +82,7 @@ const Giftpage = () => {
                 >
                   {({ errors, touched }) => (
                     <Form>
-                  <div className="gift-inputs">
+                      <div className="gift-inputs">
                         <Field
                           as={TextField}
                           fullWidth
@@ -80,16 +90,14 @@ const Giftpage = () => {
                           name="recipient"
                           id="recipient"
                           className={`form-control ${
-                            errors.recipient && touched.recipient
-                              ? "error"
-                              : ""
+                            errors.recipient && touched.recipient ? "error" : ""
                           }`}
                           type="text"
                         />
                         <ErrorMessage
                           name="recipient"
                           component="div"
-                          className="errorr" 
+                          className="errorr"
                           label="* Recipient Name"
                         />
                       </div>
@@ -111,20 +119,116 @@ const Giftpage = () => {
                         <ErrorMessage
                           name="recipientEmail"
                           component="div"
-                          className="errorr" 
+                          className="errorr"
                           label="* Recipient Email"
                         />
                       </div>
                     </Form>
                   )}
                 </Formik>
+              </div>
+              <div className="max-rec">
+                <h5>Maximum of 10 recipients</h5>
+                <button>Add another recipient</button>
+              </div>
 
-                <div className="max-rec">
-                  <h5>Maximum of 10 recipients</h5>
-                  <button>Add another recipient</button>
-                </div>
+              <div className="giftin">
+                <h3>Personal note</h3>
+
+                <Formik>
+                  <Form>
+                    <div className="gift-inputs optional">
+                      <TextField
+                        fullWidth
+                        label="Message (optional)"
+                        name="optionel"
+                        value={textValue}
+                        onChange={handleChange}
+                      />
+                      <h5
+                        style={{
+                          textAlign: "right",
+                          fontSize: "12px",
+                          color: "#666",
+                        }}
+                      >
+                        {textValue.length} / 160
+                      </h5>
+                    </div>
+                  </Form>
+                </Formik>
+              </div>
+
+              <div className="giftin">
+                <h3>From</h3>
+                <Formik
+                  validationSchema={validationSchema}
+                  initialValues={{ senderName: "" }}
+                >
+                  {({ errors, touched }) => (
+                    <Form>
+                      <div className="gift-inputs">
+                        <Field
+                          as={TextField}
+                          fullWidth
+                          label="* Sender Name "
+                          name="senderName"
+                          id="senderName"
+                          className={`form-control ${
+                            errors.senderName && touched.senderName
+                              ? "error"
+                              : ""
+                          }`}
+                          type="text"
+                        />
+                        <ErrorMessage
+                          name="senderName"
+                          component="div"
+                          className="errorr"
+                          label="* senderName Name"
+                        />
+                      </div>
+
+                      <div className="gift-inputs">
+                        <Field
+                          as={TextField}
+                          fullWidth
+                          label="* Sender Email"
+                          name="senderEmail"
+                          id="senderEmail"
+                          className={`form-control ${
+                            errors.senderEmail && touched.senderEmail
+                              ? "error"
+                              : ""
+                          }`}
+                          type="text"
+                        />
+                        <ErrorMessage
+                          name="senderEmail"
+                          component="div"
+                          className="errorr"
+                          label="* Sender Email"
+                        />
+                      </div>
+                    </Form>
+                  )}
+                </Formik>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="purchasing">
+          <div className="purchasing-text">
+
+          <h4>
+            <img src="/images/Screenshot%202024-04-22%20003112.png" alt="" />
+            By purchasing this eGift, I have read and agree to the Starbucks
+            Card Terms & Conditions.
+          </h4>
+          <Link>
+            Card Terms & Conditions
+            <GrShare />
+          </Link>
           </div>
         </div>
       </div>

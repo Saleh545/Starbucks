@@ -139,6 +139,7 @@ body{
     background-color: #1E3932;
     padding: 32px 0 24px 0 !important;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     position: fixed;
     bottom: 0 !important;
@@ -157,7 +158,7 @@ body{
     letter-spacing: .6px;
 }
 
-.pickup h3 {
+.pickup a {
     font-size: 16px;
     color: #fff;
     display: inline-flex;
@@ -168,18 +169,24 @@ body{
     cursor: pointer;
 }
 
-.pickup h3 i {
+.pickup a i {
     padding-left: 77px !important;
 }
 
 .basket-img{
     position: relative;
+    text-align: center !important;
+    display: flex;
+    place-items: center !important;
 }
 .basket-img h1{
-    text-align: center !important;
     position: absolute;
     top: 7px;
-    right: 11px;
+display: flex;   
+justify-content: center;
+align-items: center;
+
+right: 11px;
     font-size: 19px;
     color: #fff ;
     z-index: -1;
@@ -222,6 +229,12 @@ body{
         width: 72px;
         height: 72px;
     }
+    .pickup {
+        margin-left: 0 !important;
+    }
+    .basket button{
+        bottom: 22%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -244,6 +257,13 @@ body{
     .drinks-item .imgg img {
         width: 72px;
         height: 72px;
+    }
+    .pickup {
+        margin-left: 97px !important;
+    }
+    .basket{
+        justify-content: space-between !important;
+        padding-right: 31px !important;
     }
 }
 
