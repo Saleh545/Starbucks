@@ -5,12 +5,13 @@ import "../styles/sign.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { IoMdEye, IoMdEyeOff } from "react-icons/io";
+import TextField from "@mui/material/TextField";
 
 
 const Sign = () => {
   const validationSchema = Yup.object().shape({
-    usernameOrEmail: Yup.string().required("Enter an email/username."),
-    password: Yup.string().required("Enter a password."),
+    usernameOrEmail: Yup.string().required(" ⊗ Enter an email/username."),
+    password: Yup.string().required(" ⊗ Enter a password."),
   });
   const [showPassword, setShowPassword] = useState(false);
 
@@ -55,38 +56,73 @@ const Sign = () => {
             {({ errors, touched }) => (
               
               <Form>
-                <div className="inputs">
-                  <Field
-                    className={`form-control ${
-                      errors.usernameOrEmail && touched.usernameOrEmail
-                        ? "error"
-                        : ""
-                    }`}
-                    type="text"
-                    name="usernameOrEmail"
-                    placeholder="* Username or email adress"/>
-                  <ErrorMessage
-                    name="usernameOrEmail"
-                    component="div"
-                    className="errorr"/>
-                </div>
-                <div className="eye-flex inputs">
-                  <Field
-                    className={`form-control ${
-                      errors.password && touched.password ? "error" : ""
-                    }`}
-                    type={showPassword ? "text" : "password"}
-                    name="password"
-                    placeholder="* Password"/>
+              
 
-                  <div className="eye-icon" onClick={togglePasswordVisibility}>
+                <div className="gift-inputs">
+                        <Field
+                          as={TextField}
+                          fullWidth
+                          label="* Username or email adress "
+                          name="usernameOrEmail"
+                          id="senderName"
+                          className={`form-control ${
+                            errors.usernameOrEmail && touched.usernameOrEmail
+                              ? "error"
+                              : ""
+                          }`}
+                          type="text"
+                        />
+                        <ErrorMessage
+                          name="usernameOrEmail"
+                          component="div"
+                          className="errorr"
+                        />
+                      </div>
+
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+                <div className=" eye-flex gift-inputs">
+                        <Field
+                          as={TextField}
+                          fullWidth
+                          label="* Password "
+                          name="password"
+                          id="senderName"
+                          className={`form-control ${
+                            errors.password && touched.password
+                              ? "error"
+                              : ""
+                          }`}
+                          type="text"
+                        />
+                         <div className="eye-icon" onClick={togglePasswordVisibility}>
                     {showPassword ? <IoMdEyeOff /> : <IoMdEye />}
                   </div>
-                </div>
-                <ErrorMessage
-                  name="password"
-                  component="div"
-                  className="errorr"/>
+                        <ErrorMessage
+                          name="password"
+                          component="div"
+                          className="errorr"
+                        />
+                      </div>
+
+
+
+
+
+
+
                 <div className="sign-check">
                   <Field
                     type="checkbox"

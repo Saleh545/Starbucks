@@ -7,6 +7,8 @@ import { GrShare } from "react-icons/gr";
 import Footer from "../components/footer/Footer";
 import "../styles/join.css";
 
+import TextField from "@mui/material/TextField";
+
 // Form validation schema
 const validationSchema = Yup.object().shape({
   firstName: Yup.string().required("First name is required"),
@@ -87,9 +89,11 @@ const Join = () => {
                 <h3>Personal Information</h3>
 
                 
-                <div className="inputs">
+                <div className="gift-inputs">
                   <Field
-                    placeholder="* First name"
+                   as={TextField}
+                   fullWidth
+                   label="* First name "
                     type="text"
                     id="firstName"
                     name="firstName"
@@ -106,10 +110,11 @@ const Join = () => {
 
 
 
-                <div className="inputs">
+                <div className="gift-inputs">
                   <Field
-                    placeholder="* Last name"
-                    type="text"
+                    as={TextField}
+                    fullWidth
+                    label="* Last name "
                     id="lastName"
                     name="lastName"
                     className={`form-control ${
@@ -123,9 +128,12 @@ const Join = () => {
                   />
                 </div>
 
-                <div className="inputs">
+                <div className="gift-inputs">
                   <h4>Account Security</h4>
                   <Field
+                    as={TextField}
+                    fullWidth
+                    label="* Username or email adress "
                     className={`form-control ${
                       errors.usernameOrEmail && touched.usernameOrEmail
                         ? "error"
@@ -133,7 +141,6 @@ const Join = () => {
                     }`}
                     type="text"
                     name="usernameOrEmail"
-                    placeholder="* Username or email adress"
                   />
                   <ErrorMessage
                     name="usernameOrEmail"
@@ -143,14 +150,17 @@ const Join = () => {
                   <p className="input-btm">This will be your username</p>
                 </div>
 
-                <div className="eye-flex inputs">
+                <div className="eye-flex gift-inputs">
                   <Field
+                   as={TextField}
+                   fullWidth
+                   label="* Password"
                     className={`form-control ${
                       errors.password && touched.password ? "error" : ""
                     }`}
                     type={showPassword ? "text" : "password"}
                     name="password"
-                    placeholder="* Password"
+                    
                   />
                   <div
                     className="eye-icon eye-icon-join"

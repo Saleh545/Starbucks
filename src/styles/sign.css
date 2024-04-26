@@ -209,6 +209,15 @@ form .inputs input {
 .sign-text-center button:hover {
     background-color: #E5F1EC;
 }
+.gift-inputs input {
+    transition: border-color 0.3s, box-shadow 0.5s ease-in-out; /* Yarım saniyede box-shadow'u değiştir */
+  }
+  
+  .gift-inputs input:focus {
+    border-color: green;
+    box-shadow: 0 0 5px green;
+  }
+  
 
 @media (max-width: 576px) {
     .container {
